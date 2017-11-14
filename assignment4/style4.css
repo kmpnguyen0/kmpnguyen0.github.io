@@ -33,15 +33,23 @@ a:hover {
 	box-shadow: 0px 0px 20px #000000;
 }
 
-div.output {
+li:hover{
 	font-family: "Helvetica";
 	font-style: bold;
 	font-size: 30px;
 	line-height: 2em;
 	margin-right: 45px;
+	background-color: white;
+	display: inline-block;
+	width: 90vw;
+	height: 9vh;
+}
+
+.output ul li{
+	
 }
 
 
-ul {
+/*ul {
 	list-style-type: none;
-}
+}*/
