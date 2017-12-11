@@ -1,4 +1,15 @@
-video-bg {
+.video-background-wrap {
+  position: fixed;
+  left:0;
+  right:0;
+  bottom: 0;
+  width: 100%; 
+  height: 100%;
+  z-index: -1000;
+}
+
+
+video-background {
   position: fixed;
   right: 0; 
   bottom: 0;
@@ -7,6 +18,7 @@ video-bg {
   width: auto; 
   height: auto;
   z-index: -100;
+  opacity: 100%; 
 }
 
 p{
@@ -15,8 +27,8 @@ p{
 }
 
 h1{
-  font-size: 15px;
-  color: #555;
+  font-size: 25px;
+  color: #F1F1F1 ;
   font-family: 'Quicksand', sans-serif;
   text-align: center;
 }
@@ -34,9 +46,10 @@ body {
   background-size: cover;
 }
 body p{
-  color: #555;
+  color: #F1F1F1;
   font-family: 'Quicksand', sans-serif;
   font-weight: 900;
+    text-align: center;
 }
 body p i{
   transition: .5s;
@@ -105,22 +118,26 @@ body p i{
 }
 .buttons{
   margin-bottom: auto;
-  margin-top: 20px;
+  margin-top: 100px;
+  color: #F1F1F1;
 }
 button{
   margin: 0 5px;
   padding: 10px;
   letter-spacing: 1px;
   background: none;
-  border: 2px solid #444;
+  border: 2px solid #F1F1F1;
   height: 2.25em;
   border-radius: 2.25em;
-  color: #444;
+  color: #F1F1F1;
   font-size: 1.25em;
   font-weight: bold;
   text-transform: uppercase;
   transition: .5s;
-  outline: none;
+  outline: none; 
+  position: static;
+  top: 10px ;
+
 }
 button:nth-child(1):hover{
   /*Green*/
@@ -145,9 +162,16 @@ button:nth-child(3):hover{
 }
 button a:link {
   background:transparent;
-  color:#555;
+  color:#F1F1F1;
   text-decoration: none;
 }
+button a:visited {
+  background:transparent;
+  color:#F1F1F1;
+  text-decoration: none;
+}
+
+
 
 .mySlides {
   display:none 
@@ -164,16 +188,508 @@ button a:link {
         }
 
 .w3-left, .w3-right, .w3-badge {
-  cursor:pointer
+  cursor:pointer;
+  font-size: 40px;
+  color: white;
 }
 
 .w3-badge {
   height:13px;
   width:13px;
-  padding:0
+  padding:0;
+  display: inline-block ;
+  border-radius: 13px;
+  border: 1px solid white; 
+  margin: 5px;
+
+}
+
+.w3-left{
+  position: absolute;
+  left: 30px ;
+  bottom: 0px;
+}
+
+.w3-right{
+  position: absolute;
+  right: 30px ;
+  bottom: 0px;
+}
+
+.w3-white{
+  background: white;
+}
+
+.mySlides {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mySlides p{
+  margin-top:0;
+  font-family: 'Franklin Gothic', sans-serif;
+  font-size: 25px;
+
+}
+
+#slide1{
+  background-image: url("Forrest1-Mt. Furano, Daisetsuzan National Park in Hokkaido.jpg");
+
+}
+#slide1 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #F1F1F1 ;
+}
+
+.button1 {
+    color: #F1F1F1; 
+    border: 5px solid white;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top:550px;
+    left: 30vw ;
+
+}
+
+.button1:hover {
+  color: #F1F1F1; 
+  }
+
+
+
+
+#slide2{
+  background-image: url("mountain1-newzealand.jpg");
+}
+#slide2 p{
+  position: absolute; 
+  right: 38vw ;
+  bottom: 100px;
+  color: #F1F1F1 ;
+}
+.button2 {
+    color: #F1F1F1; 
+    border: 5px solid white;
+    width: 500px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 33vw ;
+}
+
+.button2:hover {
+  color: #F1F1F1; 
+
+  }
+
+
+
+
+#slide3{
+  background-image: url("mountain2-phongnhakebang.jpg");
+
+}
+#slide3 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #F1F1F1 ;
+}
+.button3 {
+    color: #F1F1F1; 
+    border: 5px solid white;
+    width: 700px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 26vw ;
+}
+
+.button3:hover {
+  color: #F1F1F1; 
+  }
+
+
+
+#slide4{
+  background-image: url("Ocean1.jpg");
+}
+#slide4 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #F1F1F1 ;
+}
+.button4 {
+    color: #F1F1F1; 
+    border: 5px solid white;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 29vw ;
+}
+
+.button4:hover {
+  color: #2196F3; 
+  }
+
+
+
+
+
+
+#slide5{
+  background-image: url("Ocean2.jpg");
+}
+#slide5 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #F1F1F1 ;
+}
+.button5 {
+    color: #F1F1F1; 
+    border: 5px solid white;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button5:hover {
+  color: #2196F3; 
+  }
+
+
+
+
+
+
+#slide6{
+  background-image: url("Oceean3- Whitehaven Beach, Queensland.jpg");
+}
+#slide6 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #F1F1F1 ;
+}
+.button6 {
+    color: #F1F1F1; 
+    border: 5px solid white;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button6:hover {
+  color: #2196F3; 
+  }
+
+
+
+
+
+
+
+#slide7{
+  background-image: url("Village1-Old Houses in Feng Huang, China.jpg");
+}
+#slide7 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #F1F1F1 ;
+}
+.button7 {
+    color: #F1F1F1; 
+    border: 5px solid white;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button7:hover {
+  color: #F1F1F1; 
+  }
+
+
+
+
+
+
+#slide8{
+  background-image: url("village2-quebec.jpg");
+}
+#slide8 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #F1F1F1 ;
+}
+.button8 {
+    color: #F1F1F1; 
+    border: 5px solid white;
+    width: 400px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 35vw ;
+}
+
+.button8:hover {
+  color: #F1F1F1; 
+  }
+
+
+
+
+#slide9{
+  background-image: url("village3-Diagon-Alley.jpg");
+}
+#slide9 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #F1F1F1 ;
+}
+.button9 {
+    color: #F1F1F1;
+    border: 5px solid white;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button9:hover {
+  color: #F1F1F1; 
+  }
+
+
+
+.arrow{
+  position: absolute;
+  bottom: 10px ;
+  z-index: 2 ;
+  width: 100vw;
+  text-align: center; 
+}
+
+.arrow2{
+  position: absolute;
+  top: 20px ;
+  left: 2vw ;
+  z-index: 5 ;
+  width: 100vw;
+  color: #F1F1F1;
+  font-size: 40px;
+}
+
+.arrow2 a:link {
+  background:transparent;
+  color:#F1F1F1;
+  text-decoration: none;
+}
+
+.arrow2 a:visited {
+  background:transparent;
+  color:#F1F1F1;
+  text-decoration: none;
 }
 
 
 
+.arrow3{
+  position: absolute;
+  top: 20px ;
+  left: 2vw ;
+  z-index: 5 ;
+  width: 100vw;
+  color: #F1F1F1;
+  font-size: 40px;
+}
+
+.arrow3 a:link {
+  background:transparent;
+  color:#F1F1F1;
+  text-decoration: none;
+}
+
+.arrow3 a:visited {
+  background:transparent;
+  color:#F1F1F1;
+  text-decoration: none;
+}
 
 
+.arrow4{
+  position: absolute;
+  top: 20px ;
+  left: 2vw ;
+  z-index: 5 ;
+  width: 100vw;
+  color: #F1F1F1;
+  font-size: 40px;
+}
+
+.arrow4 a:link {
+  background:transparent;
+  color:#F1F1F1;
+  text-decoration: none;
+}
+
+.arrow4 a:visited {
+  background:transparent;
+  color:#F1F1F1;
+  text-decoration: none;
+}
+
+.arrow5{
+  position: absolute;
+  top: 20px ;
+  left: 2vw ;
+  z-index: 5 ;
+  width: 100vw;
+  color: #F1F1F1;
+  font-size: 20px;
+  font-family: 'Franklin Gothic', sans-serif;
+}
+
+.arrow5 a:link {
+  background:transparent;
+  color:#F1F1F1;
+  text-decoration: none;
+}
+
+.arrow5 a:visited {
+  background:transparent;
+  color:#F1F1F1;
+  text-decoration: none;
+}
+
+
+#slidehalongbay{
+  background-image: url("halongbay.jpg");
+}
+#slidehalongbay p{
+  position: absolute; 
+  right: 19vw ;
+  left: 19vw;
+  bottom: 340px;
+  color: #265B74;
+  font-size: 22px;
+}
+
+#slidePalm{
+  background-image: url("PalmJumeirah.jpg");
+}
+#slidePalm p{
+  position: absolute; 
+  right: 19vw ;
+  left: 19vw;
+  bottom: 430px;
+  color: #265B74;
+  font-size: 22px;
+}
+
+#slideWhitehavenbeach{
+  background-image: url("Whitehavenbeach.jpg");
+}
+#slideWhitehavenbeach p{
+  position: absolute; 
+  right: 16vw ;
+  left: 16vw;
+  bottom: 430px;
+  color: white;
+  font-size: 22px;
+}
+
+#slideMountFurano{
+  background-image: url("MountFurano.jpg");
+  background-position: bottom 100px;
+}
+#slideMountFurano p{
+  position: absolute; 
+  right: 16vw ;
+  left: 16vw;
+  bottom: 500px;
+  color: white;
+  font-size: 22px;
+}
+
+#slideMountcook{
+  background-image: url("mountcook.jpg");
+}
+#slideMountcook p{
+  position: absolute; 
+  right: 16vw ;
+  left: 16vw;
+  bottom: 500px;
+  color: #007E8E;
+  font-size: 22px;
+}
+
+#slidephongnha{
+  background-image: url("phongnha.jpg");
+  background-position: bottom;
+}
+#slidephongnha p{
+  position: absolute; 
+  right: 16vw ;
+  left: 16vw;
+  bottom: 300px;
+  color: white;
+  font-size: 22px;
+}
+
+#slidefeng{
+  background-image: url("FengHuang.jpg");
+  background-position: bottom;
+}
+#slidefeng p{
+  position: absolute; 
+  right: 16vw ;
+  left: 16vw;
+  bottom: 50px;
+  color: white;
+  font-size: 22px;
+}
+
+#slidequebec{
+  background-image: url("quebec.jpg");
+  background-position: bottom;
+}
+#slidequebec p{
+  position: absolute; 
+  right: 12vw ;
+  left: 12vw;
+  bottom: 20px;
+  color: white;
+  font-size: 22px;
+}
+
+#slidediagon{
+  background-image: url("diagon.jpg");
+  background-position: top;
+}
+#slidediagon p{
+  position: absolute; 
+  right: 12vw ;
+  left: 12vw;
+  bottom: 620px;
+  color: white;
+  font-size: 22px;
+}
