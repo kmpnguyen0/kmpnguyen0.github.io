@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PROJECT1 CLICKCLICK page 2</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="icon" href="favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+	<div id="content" onclick="contentClick()">
+	</div>
+
+	<div id='content-wrapper'>
+
+	<a href="#"  class="button-img">
+		<img src="buttonred.png" onclick="buttonClick()">
+	</a>
+	<div class="button" id="logo-button">
+	<ul class="list">
+		<li><a href="nguyen_khe_Project 1 Click Click.html">Coraline</a></li>
+		<li> <a onclick="instructionClick()">Lost?</a></li>
+		</ul>
+	</div>
+	<div class="rectangle1"></div>
+	<pre class="text1">
+	a book 
+	her mother was 
+	reading about native 
+	people in 
+	a distant country;
+	</pre>
+	<div class="text2">
+	how every day they would take pieces of white silk and draw on them in wax, then dip the silks in dye, then draw on them more in wax and dye them some more, then boil the wax out in hot water, and then finally, throw the now-beautiful cloths on a fire and burn them to ashes. 
+	</div>
+	<div class="rectangle2"></div>
+
+	<div class="rectangle3">
+		<div class="img">
+	  		<a href="Page3.html">
+	  			<div class="img1">SHE WAS STILL</div>
+	  			<div class="img2">BORED</div>
+	  		</a>
+ 		 </div>
+ 		 <div class="img">
+ 		 	<a href="Page3.html">
+	  		<div class="img1">SHE WAS </div>
+	  		<div class="img2">STILL</div>
+	  		<div class="img1">BORED </div>
+	  		</a>
+ 		 </div>
+ 		 <div class="img">
+ 		 	<a href="Page3.html">
+	  		<div class="img1">SHE</div>
+	  		<div class="img2">WAS</div>
+	  		<div class="img1"> STILL BORED</div>
+	  		</a>
+ 		 </div>
+ 		 <div class="img">
+ 		 	<a href="Page3.html">
+	  		<div class="img2">SHE</div>
+	  		<div class="img1">WAS STILL BORED</div>
+	  	    </a>
+ 		 </div>
+	</div>
+
+
+
+	<div class="rectangle">
+		<p class="text3">It seemed . . .  particularly pointless to Coraline, but she hoped that the people enjoyed it. SHE WAS STILL BORED, and her mother wasn’t yet home. Coraline got a chair and pushed it over to the kitchen door. She climbed onto the chair and reached up. She got down, then got a broom from the broom cupboard. She climbed back on the chair again and reached up with the broom.</p>
+	</div>
+
+
+</div>
+<!-- MODAL -->
+<div id='modal'>
+	Hint: It's big. It's bold. It's come in pair of 4. 
+</div>
+
+
+<script>
+	var opened = false;
+
+	function buttonClick() {
+
+		if (opened == false) {
+			var button = document.getElementById("logo-button");
+			button.classList.add("button-show");
+			opened = true;
+		} else if(opened == true){
+			var button = document.getElementById("logo-button");
+			button.classList.remove("button-show");
+			opened = false;
+		}
+
+		
+		// console.log("haha");
+	}
+
+	var modalOpened = false;
+
+	function instructionClick(){
+		if (modalOpened == false) {
+			var modal = document.getElementById("modal");
+			modal.classList.add("open");
+
+			var content = document.getElementById("content");
+			content.classList.add("open");
+
+			var contentWrapper = document.getElementById("content-wrapper");
+			contentWrapper.classList.add("open");
+
+
+			modalOpened = true;
+		} else if(modalOpened == true){
+			var modal = document.getElementById("modal");
+			modal.classList.remove("open");
+
+			var content = document.getElementById("content");
+			content.classList.remove("open");
+
+			var contentWrapper = document.getElementById("content-wrapper");
+			contentWrapper.classList.remove("open");
+
+			modalOpened = false;
+		}
+
+	}
+
+		function contentClick(){
+		   if(modalOpened == true ){
+			var modal = document.getElementById("modal");
+			modal.classList.remove("open");
+
+			var content = document.getElementById("content");
+			content.classList.remove("open");
+           
+            var contentWrapper = document.getElementById("content-wrapper");
+			contentWrapper.classList.remove("open");
+
+			modalOpened = false;
+		}
+
+	}
+</script>
+</body>
+</html>	
+

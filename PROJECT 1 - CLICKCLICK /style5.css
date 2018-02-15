@@ -1,0 +1,216 @@
+#content{
+  display: none;
+  width:100vw;
+  height:100vh;
+  position: fixed;
+  z-index: 3;
+  left:0;
+  top:0;
+}
+#content.open{
+  display: block;
+
+}
+
+
+#content-wrapper.open{
+  filter:blur(8px);
+  -webkit-filter:blur(8px);
+}
+#modal{
+  position:fixed;
+  top:35%;
+  left:25%;
+  z-index: 4;
+  font-family: Avenir;
+  font-weight: bold;
+  font-size:20px;
+  display: none;
+  width:850px;
+}
+
+#modal.open{
+  display: block;
+}
+
+
+.button{
+    width: 200px;
+    height:50px;
+    position: absolute;
+    align-content: left;
+    right:85px;
+    top:200px;
+    z-index: 2;
+    display:none;
+}
+
+.button.button-show {
+  display: block;
+
+}
+
+.list{
+  list-style: none;
+  color:#595959;
+
+}
+
+.list a{
+  text-decoration: none;
+  color:red;
+  font-family: Avenir;
+  font-size: 1.2vw;
+  font-weight: bold;
+  align-content: left;
+}
+.list a:hover {
+   color:red;
+}
+
+.list visited{
+  color:#595959;
+}
+
+a.button-img {
+  position: absolute;
+  display: block;
+  right: 200px;
+  width:100px;
+  height:100px;
+/*  position: absolute;
+  right: 30px; */
+}
+
+a.button-img:hover {
+  cursor: pointer;
+}
+
+.button-img img {
+  position: relative;
+  left: -12px;
+  top:40px;
+  width:180%;
+  height:auto;
+}
+
+.text{
+	font-family: Avenir;
+    font-size: 4.5vw;
+    color: #5D5D5D;
+    font-weight: 300;
+    width:70vw;;
+    text-align: left; 
+    position: relative;
+    top:20vh;
+    left: 220px;
+}
+
+.rectangle1 {
+  height: 18px;
+  width: 83px;
+  background-color: red;
+  position: relative;
+  top: 37vh;
+}
+
+.rectangle2 {
+  height:143px;
+  width:18px;
+  background-color: red;
+  position: relative;
+  bottom: -8vh;
+  left: 50% ;
+}
+
+.rectangle {
+  height: 900px;
+  width: 1440px;
+  background-color: #1C1C1C;
+  position: relative;
+  top: 8vh;
+}
+
+.text2{
+	font-family: Avenir;
+    font-size: 10vw;
+    font-weight: 500; 
+    text-align: center;
+    position: relative;
+	bottom: 85vh;
+    left:13vw;
+}
+.text-a{
+	color:#151515;
+}
+
+.text-b{
+	color:#595959;
+}
+
+a,
+a:visited 
+{
+  color:#595959;
+  text-decoration: none;
+}
+a:hover {
+  color:red;
+  position: center;
+}
+
+
+.text2,
+.text-a,
+.text-b{
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.archaic {
+  font-family: Avenir;
+    font-size: 1.2vw;
+    color: #777777; 
+    position: relative;
+    bottom:241vh;
+    left: 50px;
+}
+
+.pointless
+{
+  font-family: Avenir;
+    font-size: 1.2vw;
+    color: #777777; 
+    position: relative;
+    bottom:185vh;
+    left: 50px;
+}
+
+.chilly
+{
+  font-family: Avenir;
+    font-size: 1.2vw;
+    color: #777777; 
+    position: relative;
+    bottom:130vh;
+    left: 50px;
+}
+.rebel
+{
+  font-family: Avenir;
+    font-size: 1.2vw;
+    color: #777777; 
+    position: relative;
+    bottom:50vh;
+    left: 50px;
+}
+
+.curious
+{
+  font-family: Avenir;
+    font-size: 1.2vw;
+    color: #777777; 
+    position: relative;
+    bottom:19vh;
+    left: 50px;
+}

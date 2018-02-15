@@ -1,0 +1,49 @@
+body{
+	background: red;
+}
+a{
+	font-family: Avenir;
+    font-size: 3.5vw;
+    font-weight: 450; 
+    color:white;
+    position: absolute;
+    top:230px;
+    left:16vw;
+    text-decoration: none;
+}
+a:hover {
+	color:black;
+	font-size: 7vw;
+	top:190px;
+	left:13vw;
+	text-transform: uppercase;
+}
+a:visited{
+	text-decoration: none;
+}
+
+
+.text{
+	font-family: Avenir;
+    font-size: 1.5vw;
+    font-weight: 350; 
+    color: white;
+    position: absolute;
+    width: 400px;
+    top:320px;
+    left:250px;
+}
+
+.text2{
+	font-family: Avenir;
+    font-size: 0.8vw;
+    font-weight: 200; 
+    color: #FF6868;
+    position: absolute;
+    top:600px;
+    left:250px;
+}
+
+.text2:hover{
+	color:white;
+}

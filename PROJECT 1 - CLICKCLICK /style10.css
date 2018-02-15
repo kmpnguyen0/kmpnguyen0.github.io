@@ -1,0 +1,127 @@
+
+.text1 {
+	font-family: Avenir;
+    font-size: 1.5vw;
+    font-weight: 450; 
+    color: black;
+    position: absolute;
+    width: 400px;
+    top:180px;
+    left:220px;
+}
+.text2 {
+	font-family: Avenir;
+    font-size: 1.5vw;
+    font-weight: 450; 
+    color: black;
+    text-align: right;
+    width: 400px;
+    position: relative;
+    top:240px;
+    left:220px;
+}
+.text3 {
+	font-family: Avenir;
+    font-size: 1.5vw;
+    font-weight: 450; 
+    color: black;
+    width: 400px;
+    position: relative;
+    top:240px;
+    left:220px;
+}
+.text4 {
+	font-family: Avenir;
+    font-size: 1.5vw;
+    font-weight: 450; 
+    color: black;
+    text-align: right;
+    width: 400px;
+    position: relative;
+    top:240px;
+    left:220px;
+}
+.text5 {
+	font-family: Avenir;
+    font-size: 1.5vw;
+    font-weight: 450; 
+    color: black;
+    text-align: justify;
+    width: 350px;
+    position: absolute;
+    top:180px;
+    left:820px;
+}
+.text6 {
+	font-family: Avenir;
+    font-size: 4.5vw;
+    font-weight: bold; 
+    color: black;
+    text-align: justify;
+    width: 550px;
+    position: absolute;
+    top:55vw;
+    left:200px;
+}
+.text7 {
+	font-family: Avenir;
+    font-size: 1.8vw;
+    font-weight: 450; 
+    color: black;
+    text-align: justify;
+    width: 450px;
+    position: absolute;
+    top:59vw;
+    left:800px;
+}
+.text8 {
+	font-family: Avenir;
+    font-size: 9vw;
+    font-weight: bold; 
+    color: black;
+    text-align: justify;
+    width: 1090px;
+    position: absolute;
+    top:102vw;
+    left:280px;
+}
+.text9 {
+	font-family: Avenir;
+    font-size: 4vw;
+    font-weight: bold; 
+    color: black;
+    text-align: justify;
+    width: 1050px;
+    position: absolute;
+    top:125vw;
+    left:200px;
+}
+
+.text10 {
+	font-family: Avenir;
+    font-size: 1.8vw;
+    font-weight: 450; 
+    color: black;
+    text-align: justify;
+    width: 450px;
+    position: absolute;
+    top:151vw;
+    left:800px;
+}
+.rectangle {
+  height: 558px;
+  width: 20px;
+  background-color: black;
+  position: absolute;
+  top: 28vh;
+  z-index: 2;
+  left:50vw;
+}
+
+.rectangle1 {
+  height: 1780px;
+  width: 1440px;
+  background-color:red;
+  position: absolute;
+  top: 760px;
+}
