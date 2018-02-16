@@ -1,8 +1,7 @@
 body{
-	background-color: red;
-}
-
-#content{
+  background-color: red;
+  }
+  #content{
   display: none;
   width:100vw;
   height:100vh;
@@ -56,13 +55,14 @@ body{
 
 .list{
   list-style: none;
-  color:#FFCFCF;
+  color:white;
   text-align: center;
+
 }
 
 .list a{
   text-decoration: none;
-  color:#FFCFCF;
+  color:white;
   font-family: Avenir;
   font-size: 1.2vw;
   font-weight: bold;
@@ -73,19 +73,18 @@ body{
 }
 
 .list visited{
-  color:#FFCFCF;
+  color:white;
 }
 
 .pagenumber{
   font-size: 3.2vw;
-  color:#FFCFCF;
+  color:black;
   font-family: Avenir;
   font-size: 3vw;
   text-align: center;
   z-index:3;
   font-weight: bold;
-} 
-
+}
 a.button-img {
   position: absolute;
   display: block;
@@ -109,21 +108,12 @@ a.button-img:hover {
   height:auto;
 }
 
+.text{
+  font-size: 2.5vw;
+  color:black;
+  font-family: Avenir;
+  text-align: center;
+  font-weight: 450;
+  margin-top:600px;
 
-
-a.text{
-	font-family: Avenir;
-    font-size: 2vw;
-    font-weight: 550; 
-    color: black;
-    position: absolute;
-    top:340px;
-    left:620px;
-}
-
-a.text:hover{
-	font-size: 15vw;
-    font-weight: 550; 
-    top:200px;
-    left:100px;
 }

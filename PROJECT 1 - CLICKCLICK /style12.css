@@ -2,6 +2,7 @@ body{
 	background-color: red;
 }
 
+
 #content{
   display: none;
   width:100vw;
@@ -56,13 +57,14 @@ body{
 
 .list{
   list-style: none;
-  color:#FFCFCF;
+  color:white;
   text-align: center;
+
 }
 
 .list a{
   text-decoration: none;
-  color:#FFCFCF;
+  color:white;
   font-family: Avenir;
   font-size: 1.2vw;
   font-weight: bold;
@@ -73,18 +75,18 @@ body{
 }
 
 .list visited{
-  color:#FFCFCF;
+  color:white;
 }
 
 .pagenumber{
   font-size: 3.2vw;
-  color:#FFCFCF;
+  color:white;
   font-family: Avenir;
   font-size: 3vw;
   text-align: center;
   z-index:3;
   font-weight: bold;
-} 
+}
 
 a.button-img {
   position: absolute;
@@ -111,19 +113,21 @@ a.button-img:hover {
 
 
 
-a.text{
+a.text1{
 	font-family: Avenir;
-    font-size: 2vw;
-    font-weight: 550; 
-    color: black;
+    font-size: 1.8vw;
+    color: white;
+    font-weight: 250;
+    top:22vh;
+    left:150px;
+    width: 800px;
     position: absolute;
-    top:340px;
-    left:620px;
+    text-decoration: none;
 }
-
-a.text:hover{
-	font-size: 15vw;
-    font-weight: 550; 
-    top:200px;
-    left:100px;
+a.text1:hover{
+	color: black !important;
+	font-weight: 250;
+}
+a.text1:visited{
+  color: white;
 }

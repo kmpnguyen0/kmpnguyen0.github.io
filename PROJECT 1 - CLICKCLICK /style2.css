@@ -44,8 +44,8 @@ body {
     height:50px;
     position: absolute;
     align-content: left;
-    right:85px;
-    top:200px;
+    right:145px;
+    top:190px;
     z-index: 2;
     display:none;
 }
@@ -58,6 +58,7 @@ body {
 .list{
   list-style: none;
   color:red;
+  text-align: center;
 
 }
 
@@ -67,6 +68,7 @@ body {
   font-family: Avenir;
   font-size: 1.2vw;
   font-weight: bold;
+  text-align: center;
   align-content: left;
 }
 .list a:hover {
@@ -75,6 +77,14 @@ body {
 
 .list visited{
   color:red;
+}
+.pagenumber{
+  font-size: 3.2vw;
+  color:red;
+  font-family: Avenir;
+  font-size: 3vw;
+  text-align: center;
+  font-weight: bold;
 }
 
 

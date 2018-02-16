@@ -39,8 +39,8 @@
     height:50px;
     position: absolute;
     align-content: left;
-    right:85px;
-    top:200px;
+    right:145px;
+    top:190px;
     z-index: 2;
     display:none;
 }
@@ -53,7 +53,7 @@
 .list{
   list-style: none;
   color:#595959;
-
+text-align: center;
 }
 
 .list a{
@@ -71,7 +71,14 @@
 .list visited{
   color:#595959;
 }
-
+.pagenumber{
+  font-size: 3.2vw;
+  font-family: Avenir;
+  font-size: 3vw;
+  text-align: center;
+  z-index:3;
+  font-weight: bold;
+} 
 a.button-img {
   position: absolute;
   display: block;
