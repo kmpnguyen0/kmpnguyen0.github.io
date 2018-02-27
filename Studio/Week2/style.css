@@ -1,0 +1,531 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  background-size: cover;
+}
+
+
+.buttons{
+  margin-bottom: auto;
+  margin-top: 100px;
+  color: #000000;
+}
+button{
+  margin: 0 5px;
+  padding: 10px;
+  letter-spacing: 1px;
+  background: none;
+  border: 2px solid #000000;
+  height: 2.25em;
+  border-radius: 2.25em;
+  color: #000000;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: .5s;
+  outline: none; 
+  position: static;
+  top: 10px ;
+
+}
+button:nth-child(1):hover{
+  /*Green*/
+  color: #00E676;
+  text-shadow: 0 0 7px #00E676;
+  border-color: #00E676;
+  box-shadow: 0 0 15px #00E676, inset 0 0 15px #00E676;
+}
+button:nth-child(2):hover{
+  /*Pink*/
+  color: #ff005b;
+  text-shadow: 0 0 7px #ff005b;
+  border-color: #ff005b;
+  box-shadow: 0 0 15px #ff005b, inset 0 0 15px #ff005b;
+}
+button:nth-child(3):hover{
+  /*Blue*/
+  color: #2196F3;
+  text-shadow: 0 0 7px #2196F3;
+  border-color: #2196F3;
+  box-shadow: 0 0 15px #2196F3, inset 0 0 15px #2196F3;
+}
+button a:link {
+  background:transparent;
+  color:#000000;
+  text-decoration: none;
+}
+button a:visited {
+  background:transparent;
+  color:#000000;
+  text-decoration: none;
+}
+
+
+
+.mySlides {
+  display:none 
+}
+
+.mySliders {
+            width: 100%;
+            height: 100%;
+            max-height: 100%;
+            margin: 0;
+            padding: 0;
+            background-size:100% 100%;
+            background-repeat: no-repeat;
+        }
+
+.w3-left, .w3-right, .w3-badge {
+  cursor:pointer;
+  font-size: 60px;
+  color: black;
+}
+
+
+
+.w3-left{
+  position: absolute;
+  left: 250px ;
+  bottom: 90px;
+}
+
+.w3-right{
+  position: absolute;
+  right: 210px ;
+  bottom: 90px;
+}
+
+.w3-white{
+  background: black;
+}
+
+.mySlides {
+  width: 65vw;
+  height: 65vh;
+  margin-top:-30vh;
+  margin-left:25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mySlides p{
+  margin-top:0;
+  font-family: 'Franklin Gothic', sans-serif;
+  font-size: 25px;
+
+}
+
+#slide1{
+  background-image: url("Yangchen Gruben.jpg");
+}
+#slide1 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #000000 ;
+}
+.button1 {
+    color: #000000; 
+    border: 5px solid black;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button1:hover {
+  color: #000000; 
+  }
+.button1 a:
+{
+  color: #000000; 
+}
+
+
+
+
+
+#slide2{
+  background-image: url("Esra Gumrukculer.jpg");
+}
+#slide2 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #000000 ;
+}
+.button2 {
+    color: #000000; 
+    border: 5px solid black;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button2:hover {
+  color: #000000; 
+  }
+.button2 a:
+{
+  color: #000000; 
+}
+
+
+
+
+#slide3{
+  background-image: url("Shuting Guo.jpg");
+}
+#slide3 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #000000 ;
+}
+.button3 {
+    color: #000000; 
+    border: 5px solid black;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button3:hover {
+  color: #000000; 
+  }
+.button3 a:
+{
+  color: #000000; 
+}
+
+
+
+
+#slide4{
+  background-image: url("Ayse Yaren Kaya.jpg");
+}
+#slide4 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #000000 ;
+}
+.button4 {
+    color: #000000; 
+    border: 5px solid black;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button4:hover {
+  color: #000000; 
+  }
+.button4 a:
+{
+  color: #000000; 
+}
+
+
+
+
+#slide5{
+  background-image: url("Prithi Khalique.jpg");
+}
+#slide5 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #000000 ;
+}
+.button5 {
+    color: #000000; 
+    border: 5px solid black;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button5:hover {
+  color: #000000; 
+  }
+.button5 a:
+{
+  color: #000000; 
+}
+
+
+#slide6{
+  background-image: url("Soyeon Kim.jpg");
+}
+#slide6 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #000000 ;
+}
+.button6 {
+    color: #000000; 
+    border: 5px solid black;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button6:hover {
+  color: #000000; 
+  }
+.button6 a:
+{
+  color: #000000; 
+}
+
+
+#slide7{
+  background-image: url("Ho Yau Chik.jpg");
+}
+#slide7 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #000000 ;
+}
+.button7 {
+    color: #000000; 
+    border: 5px solid black;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button7:hover {
+  color: #000000; 
+  }
+.button7 a:
+{
+  color: #000000; 
+}
+
+#slide8{
+  background-image: url("Evelin Susan Fung Zhong.jpg");
+}
+#slide8 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #000000 ;
+}
+.button8 {
+    color: #000000; 
+    border: 5px solid black;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button8:hover {
+  color: #000000; 
+  }
+.button8 a:
+{
+  color: #000000; 
+}
+
+
+
+#slide9{
+  background-image: url("Vincent Garcia.jpg");
+}
+#slide9 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #000000; ;
+}
+.button9 {
+    color: #000000;
+    border: 5px solid black;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button9:hover {
+  color: #000000; 
+  }
+
+
+#slide10{
+  background-image: url("Seowon Kim.jpg");
+}
+#slide10 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #000000; ;
+}
+.button10 {
+    color: #000000;
+    border: 5px solid black;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button10:hover {
+  color: #000000; 
+  }
+
+#slide11{
+  background-image: url("Jahyun Lee.jpg");
+}
+#slide11 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #000000; ;
+}
+.button11 {
+    color: #000000;
+    border: 5px solid black;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button11:hover {
+  color: #000000; 
+  }
+
+
+#slide12{
+  background-image: url("Emily Hue Foo Li.jpg");
+}
+#slide12 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #000000; ;
+}
+.button12 {
+    color: #000000;
+    border: 5px solid black;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button12:hover {
+  color: #000000; 
+  }
+
+
+#slide13{
+  background-image: url("Vincent Privitera.jpg");
+}
+#slide13 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #000000; ;
+}
+.button13 {
+    color: #000000;
+    border: 5px solid black;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button13:hover {
+  color: #000000; 
+  }
+
+  #slide14{
+  background-image: url("Emil Waldron.jpg");
+}
+#slide14 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #000000; ;
+}
+.button14 {
+    color: #000000;
+    border: 5px solid black;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button14:hover {
+  color: #000000; 
+  }
+
+ #slide15{
+  background-image: url("Khe Nguyen.jpg");
+}
+#slide15 p{
+  position: absolute; 
+  right: 31vw ;
+  bottom: 100px;
+  color: #000000; ;
+}
+.button15 {
+    color: #000000;
+    border: 5px solid black;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+    left: 30vw ;
+}
+
+.button15:hover {
+  color: #000000; 
+  }
+
+.arrow{
+  position: absolute;
+  bottom: 10px ;
+  left:140px;
+  z-index: 2 ;
+  width: 80vw;
+  text-align: center; 
+}

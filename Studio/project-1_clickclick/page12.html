@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PROJECT1 CLICKCLICK page 12</title>
+	<link rel="stylesheet" type="text/css" href="style12.css">
+	<link rel="icon" href="favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+	<div id="content" onclick="contentClick()">
+	</div>
+
+	<div id='content-wrapper'>
+
+	<a href="#"  class="button-img">
+		<img src="buttonwhite.png" onclick="buttonClick()">
+	</a>
+	<div class="button" id="logo-button">
+	<ul class="list">
+		<li><a href="nguyen_khe_Project 1 Click Click.html">Coraline</a></li>
+		<li class="pagenumber">12/12</li>
+		</ul>
+	</div>
+
+
+<a href="page13.html" class="text1">
+Coraline could hear the rats whispering to each other, <br>
+although she could not tell what they were saying. <br>
+She was not certain that she wanted to know what they were saying. <br>
+Her other parents stood in the kitchen doorway as she walked down <br>
+the corridor, smiling identical smiles, and waving slowly.
+<br>
+“Have a nice time outside,” said her other mother.
+<br>
+“We’ll just wait here for you to come back,” said her other father. 
+<br>
+When Coraline got to the front door, <br>
+she turned back and looked at them. <br>
+They were still watching her, and waving, and smiling. <br>
+Coraline walked outside, and down the steps</a>
+
+</div>
+</div>
+<!-- MODAL -->
+<div id='modal'>
+	Hint: It's big. It's bold. It's come in pair of 4. 
+</div>
+
+
+<script>
+	var opened = false;
+
+	function buttonClick() {
+
+		if (opened == false) {
+			var button = document.getElementById("logo-button");
+			button.classList.add("button-show");
+			opened = true;
+		} else if(opened == true){
+			var button = document.getElementById("logo-button");
+			button.classList.remove("button-show");
+			opened = false;
+		}
+
+		
+		// console.log("haha");
+	}
+
+	var modalOpened = false;
+
+	function instructionClick(){
+		if (modalOpened == false) {
+			var modal = document.getElementById("modal");
+			modal.classList.add("open");
+
+			var content = document.getElementById("content");
+			content.classList.add("open");
+
+			var contentWrapper = document.getElementById("content-wrapper");
+			contentWrapper.classList.add("open");
+
+
+			modalOpened = true;
+		} else if(modalOpened == true){
+			var modal = document.getElementById("modal");
+			modal.classList.remove("open");
+
+			var content = document.getElementById("content");
+			content.classList.remove("open");
+
+			var contentWrapper = document.getElementById("content-wrapper");
+			contentWrapper.classList.remove("open");
+
+			modalOpened = false;
+		}
+
+	}
+
+		function contentClick(){
+		   if(modalOpened == true ){
+			var modal = document.getElementById("modal");
+			modal.classList.remove("open");
+
+			var content = document.getElementById("content");
+			content.classList.remove("open");
+           
+            var contentWrapper = document.getElementById("content-wrapper");
+			contentWrapper.classList.remove("open");
+
+			modalOpened = false;
+		}
+
+	}
+</script>
+</body>
+</html>	

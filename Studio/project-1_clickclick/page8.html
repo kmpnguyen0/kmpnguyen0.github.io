@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PROJECT1 CLICKCLICK page 8</title>
+	<link rel="stylesheet" type="text/css" href="style8.css">
+	<link rel="icon" href="favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+	<div id="content" onclick="contentClick()">
+	</div>
+
+	<div id='content-wrapper'>
+
+	<a href="#"  class="button-img">
+		<img src="buttonred.png" onclick="buttonClick()">
+	</a>
+	<div class="button" id="logo-button">
+	<ul class="list">
+		<li><a href="nguyen_khe_Project 1 Click Click.html">Coraline</a></li>
+		<li class="pagenumber">8/12</li>
+		</ul>
+	</div>
+<div class="line"></div>
+<div class="line2"></div>
+<pre class="text1">This was turning 
+out to be a very 
+interesting day 
+after all.</pre>
+<div class="line3"></div>
+<div class="line4"></div>
+<pre class="text2"> After lunch her 
+other parents did 
+the washing up, 
+and Coraline went down 
+the hall to her other 
+bedroom. It was 
+different from her 
+bedroom at home. 
+For a start it 
+was painted in an 
+off-putting shade of 
+green and a peculiar 
+shade of pink.</pre>
+
+<div class="line5"></div>
+
+<pre class="text3">
+Coraline decided 
+that she wouldn’t 
+want to have to 
+sleep in there, 
+but that the color 
+scheme was an awful 
+lot more interesting 
+than her own bedroom.
+</pre>
+
+<div class="line6"></div>
+
+<pre class="text4">
+There were all sorts of 
+remarkable things in 
+there she’d never 
+seen before: windup 
+angels that fluttered 
+around the bedroom 
+like startled sparrows; 
+books with pictures 
+that writhed and 
+crawled and shimmered; 
+little dinosaur skulls 
+that chattered their 
+teeth as she passed.
+</pre>
+
+<div class="line7"></div>
+
+<pre class="text5">
+A whole toy box filled 
+with wonderful toys.
+</pre>
+
+<div class="line8"></div>
+<div class="line9"></div>
+<div class="line10"></div>
+
+<pre class="text6">
+This is more like it, 
+thought Coraline. She 
+looked out of the window. 
+Outside, the view was the 
+same one she saw from 
+her own bedroom: trees, 
+fields, and beyond them, 
+on the horizon, distant 
+purple hills.
+</pre>
+<div class="line11"></div>
+<div class="line12"></div>
+<div class="line13"></div>
+<pre class="text7">
+Something black scurried 
+across the floor and 
+vanished under the bed. 
+Coraline got down on her 
+knees and looked under 
+the bed. Fifty little 
+red eyes stared back at her.
+</pre>
+
+<div class="line14"></div>
+
+<div class="text8">
+<div class="a">"Hello,"</div>
+<div class="b">said Coraline.</div>
+</div>
+     
+<div class="line15"></div> 
+<a href="page9.html" class="text9">“Are you the rats?”</a> 
+</div>
+     
+</div>
+<!-- MODAL -->
+<div id='modal'>
+	Hint: It's big. It's bold. It's come in pair of 4. 
+</div>
+
+
+<script>
+	var opened = false;
+
+	function buttonClick() {
+
+		if (opened == false) {
+			var button = document.getElementById("logo-button");
+			button.classList.add("button-show");
+			opened = true;
+		} else if(opened == true){
+			var button = document.getElementById("logo-button");
+			button.classList.remove("button-show");
+			opened = false;
+		}
+
+		
+		// console.log("haha");
+	}
+
+	var modalOpened = false;
+
+	function instructionClick(){
+		if (modalOpened == false) {
+			var modal = document.getElementById("modal");
+			modal.classList.add("open");
+
+			var content = document.getElementById("content");
+			content.classList.add("open");
+
+			var contentWrapper = document.getElementById("content-wrapper");
+			contentWrapper.classList.add("open");
+
+
+			modalOpened = true;
+		} else if(modalOpened == true){
+			var modal = document.getElementById("modal");
+			modal.classList.remove("open");
+
+			var content = document.getElementById("content");
+			content.classList.remove("open");
+
+			var contentWrapper = document.getElementById("content-wrapper");
+			contentWrapper.classList.remove("open");
+
+			modalOpened = false;
+		}
+
+	}
+
+		function contentClick(){
+		   if(modalOpened == true ){
+			var modal = document.getElementById("modal");
+			modal.classList.remove("open");
+
+			var content = document.getElementById("content");
+			content.classList.remove("open");
+           
+            var contentWrapper = document.getElementById("content-wrapper");
+			contentWrapper.classList.remove("open");
+
+			modalOpened = false;
+		}
+
+	}
+</script>             
+</body>
+</html>	

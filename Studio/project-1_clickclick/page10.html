@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PROJECT1 CLICKCLICK page 10</title>
+	<link rel="stylesheet" type="text/css" href="style10.css">
+	<link rel="icon" href="favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+	<div id="content" onclick="contentClick()">
+	</div>
+
+	<div id='content-wrapper'>
+
+	<a href="#"  class="button-img">
+		<img src="buttonred.png" onclick="buttonClick()">
+	</a>
+	<div class="button" id="logo-button">
+	<ul class="list">
+		<li><a href="nguyen_khe_Project 1 Click Click.html">Coraline</a></li>
+		<li class="pagenumber">10/12</li>
+		</ul>
+	</div>
+
+	<a href="page11.html" class="style7"> continue </a>
+<pre class="text1">
+ <b>“Can you talk?”</b>
+she asked. 
+</pre>
+
+<pre class="text2">
+The largest, blackest of 
+the rats shook its head. 
+It had an unpleasant sort 
+of smile, Coraline thought. 
+</pre>
+
+<pre class="text3">
+<b>“Well,”</b>
+asked Coraline, 
+<b>“what do you do?”</b>
+</pre>
+ 
+<pre class="text4">
+The rats formed a circle. 
+</pre>
+
+<div class="rectangle"></div>
+
+<p class="text5">
+Then they began to climb on top of each other, carefully but swiftly, until they had formed a pyramid with the largest rat at the top. The rats began to sing, in high, whispery voices, We have teeth and we have tails We have tails we have eyes We were here before you fell You will be here when we rise. It wasn’t a pretty song. Coraline was sure she’d heard it before, or something like it, although she was unable to remember exactly where
+</p>
+
+<div class="rectangle1"></div>
+
+<pre class="text6">
+Then the 
+pyramid fell 
+&nbsp;&nbsp;&nbsp;&nbsp;apart,
+&nbsp;and the rats 
+scampered,
+&nbsp;&nbsp;&nbsp;&nbsp;fast and 
+&nbsp;&nbsp;&nbsp;black,
+
+</pre>
+
+<p class="text7">
+	The other crazy old man upstairs was standing in the doorway, holding a tall black hat in his hands. The rats scampered up him, burrowing into his pockets, into his shirt, up his trouser legs, down his neck.  The largest rat climbed onto the old man’s shoulders, swung up on the long gray mustache, past the big black button eyes, and onto the top of the man’s head. In seconds the only evidence that the rats were there at all were the restless lumps under the man’s clothes, forever sliding from place to place across him; and there was still the largest rat, who stared down, with glittering red eyes, at Coraline from the man’s head. 
+	<br><br>
+	The old man put his hat on, 
+	and the last rat was gone.
+	<br><br><br><br><br><br>said the other old man upstairs.</p>
+
+	<p class="text8">“Hello Coraline,”</p>
+	<p class="text9">“I heard you were here. It is time 
+	for the rats to have their dinner. 
+	But you can come up with me, 
+	if you like, and watch them feed.”</p>
+	<p class="text10">There was something hungry in 
+	the old man’s button eyes that 
+	made Coraline feel uncomfortable. 
+	“No, thank you,” she said. 
+	“I’m going outside to explore.” 
+	The old man nodded, very slowly.</p>
+	<
+</div>
+</div>
+<!-- MODAL -->
+<div id='modal'>
+	Hint: It's big. It's bold. It's come in pair of 4. 
+</div>
+
+
+<script>
+	var opened = false;
+
+	function buttonClick() {
+
+		if (opened == false) {
+			var button = document.getElementById("logo-button");
+			button.classList.add("button-show");
+			opened = true;
+		} else if(opened == true){
+			var button = document.getElementById("logo-button");
+			button.classList.remove("button-show");
+			opened = false;
+		}
+
+		
+		// console.log("haha");
+	}
+
+	var modalOpened = false;
+
+	function instructionClick(){
+		if (modalOpened == false) {
+			var modal = document.getElementById("modal");
+			modal.classList.add("open");
+
+			var content = document.getElementById("content");
+			content.classList.add("open");
+
+			var contentWrapper = document.getElementById("content-wrapper");
+			contentWrapper.classList.add("open");
+
+
+			modalOpened = true;
+		} else if(modalOpened == true){
+			var modal = document.getElementById("modal");
+			modal.classList.remove("open");
+
+			var content = document.getElementById("content");
+			content.classList.remove("open");
+
+			var contentWrapper = document.getElementById("content-wrapper");
+			contentWrapper.classList.remove("open");
+
+			modalOpened = false;
+		}
+
+	}
+
+		function contentClick(){
+		   if(modalOpened == true ){
+			var modal = document.getElementById("modal");
+			modal.classList.remove("open");
+
+			var content = document.getElementById("content");
+			content.classList.remove("open");
+           
+            var contentWrapper = document.getElementById("content-wrapper");
+			contentWrapper.classList.remove("open");
+
+			modalOpened = false;
+		}
+
+	}
+</script>
+</body>
+</html>	

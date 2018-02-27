@@ -1,0 +1,119 @@
+body{
+  background-color: red;
+  }
+  #content{
+  display: none;
+  width:100vw;
+  height:100vh;
+  position: fixed;
+  z-index: 3;
+  left:0;
+  top:0;
+}
+#content.open{
+  display: block;
+
+}
+
+
+#content-wrapper.open{
+  filter:blur(8px);
+  -webkit-filter:blur(8px);
+}
+#modal{
+  position:fixed;
+  top:35%;
+  left:25%;
+  z-index: 4;
+  font-family: Avenir;
+  font-weight: bold;
+  font-size:20px;
+  display: none;
+  width:850px;
+}
+
+#modal.open{
+  display: block;
+}
+
+
+.button{
+    width: 200px;
+    height:50px;
+    position: absolute;
+    align-content: left;
+    right:145px;
+    top:190px;
+    z-index: 2;
+    display:none;
+}
+
+.button.button-show {
+  display: block;
+
+}
+
+.list{
+  list-style: none;
+  color:white;
+  text-align: center;
+
+}
+
+.list a{
+  text-decoration: none;
+  color:white;
+  font-family: Avenir;
+  font-size: 1.2vw;
+  font-weight: bold;
+  align-content: left;
+}
+.list a:hover {
+   font-size: 1.4vw;
+}
+
+.list visited{
+  color:white;
+}
+
+.pagenumber{
+  font-size: 3.2vw;
+  color:black;
+  font-family: Avenir;
+  font-size: 3vw;
+  text-align: center;
+  z-index:3;
+  font-weight: bold;
+}
+a.button-img {
+  position: absolute;
+  display: block;
+  right: 200px;
+  width:180px;
+  height:180px;
+  right: 140px;
+  top:40px;
+  z-index: 2;
+/*  position: absolute;
+  right: 30px; */
+}
+
+a.button-img:hover {
+  cursor: pointer;
+}
+
+.button-img img {
+  position: relative;
+  width:100%;
+  height:auto;
+}
+
+.text{
+  font-size: 2.5vw;
+  color:black;
+  font-family: Avenir;
+  text-align: center;
+  font-weight: 450;
+  margin-top:600px;
+
+}

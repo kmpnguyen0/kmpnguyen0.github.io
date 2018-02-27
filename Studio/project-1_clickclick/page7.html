@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PROJECT1 CLICKCLICK page 7</title>
+	<link rel="stylesheet" type="text/css" href="style7.css">
+	<link rel="icon" href="favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+<div id="content" onclick="contentClick()">
+	</div>
+
+	<div id='content-wrapper'>
+
+	<a href="#"  class="button-img">
+		<img src="buttonredwhite.png" onclick="buttonClick()">
+	</a>
+	<div class="button" id="logo-button">
+	<ul class="list">
+		<li><a href="nguyen_khe_Project 1 Click Click.html">Coraline</a></li>
+		<li class="pagenumber">7/12</li>
+		</ul>
+	</div>
+<a href="page8.html" class="style7"> continue </a>
+	<pre onclick="myFunction()" class="style">
+	She almost had it 
+	when somebody said,
+	</pre>
+	<div class="style2 myDIV" >
+	“Coraline?” 
+	</div>
+	<div class="style3 myDIV" >
+	It sounded like mother.
+	</div>
+	<div class="style4 myDIV" >
+	MOTHER?
+	</div>
+	<div class="style5 myDIV" >
+	Coraline went into the kitchen, where the voice had come from. A woman stood in the kitchen with her back to Coraline. She looked a little like Coraline’s mother. Only . . . Only her skin was white as paper. Only she was taller and thinner. Only her fingers were too long, and they never stopped moving, and her dark red fingernails were curved and sharp.
+	</div>
+
+ 	<div class=" style6 myDIV" >
+ 	<img src="page7text.png" width="80%" height=80%>
+
+ 	
+	</div>
+ 	
+
+</div>
+<!-- MODAL -->
+<div id='modal'>
+	Hint: It's big. It's bold. It's come in pair of 4. 
+</div>
+
+
+<script>
+	var opened = false;
+
+	function buttonClick() {
+
+		if (opened == false) {
+			var button = document.getElementById("logo-button");
+			button.classList.add("button-show");
+			opened = true;
+		} else if(opened == true){
+			var button = document.getElementById("logo-button");
+			button.classList.remove("button-show");
+			opened = false;
+		}
+
+		
+		// console.log("haha");
+	}
+
+	var modalOpened = false;
+
+	function instructionClick(){
+		if (modalOpened == false) {
+			var modal = document.getElementById("modal");
+			modal.classList.add("open");
+
+			var content = document.getElementById("content");
+			content.classList.add("open");
+
+			var contentWrapper = document.getElementById("content-wrapper");
+			contentWrapper.classList.add("open");
+
+
+			modalOpened = true;
+		} else if(modalOpened == true){
+			var modal = document.getElementById("modal");
+			modal.classList.remove("open");
+
+			var content = document.getElementById("content");
+			content.classList.remove("open");
+
+			var contentWrapper = document.getElementById("content-wrapper");
+			contentWrapper.classList.remove("open");
+
+			modalOpened = false;
+		}
+
+	}
+
+		function contentClick(){
+		   if(modalOpened == true ){
+			var modal = document.getElementById("modal");
+			modal.classList.remove("open");
+
+			var content = document.getElementById("content");
+			content.classList.remove("open");
+           
+            var contentWrapper = document.getElementById("content-wrapper");
+			contentWrapper.classList.remove("open");
+
+			modalOpened = false;
+		}
+
+	}
+	var counter = 0;
+
+function myFunction() {
+    
+
+
+    var x = document.getElementsByClassName("myDIV");
+    
+    if(counter < x.length){
+    	/* show next sentence */
+    	console.log(x[counter])
+    	
+		        // x[counter].style.display = "block";
+		       x[counter].classList.add("animated");
+      counter = counter + 1;
+    } else {
+    	counter = 0;
+    }
+
+   
+
+}
+</script>
+
+
+</body>
+</html>	
