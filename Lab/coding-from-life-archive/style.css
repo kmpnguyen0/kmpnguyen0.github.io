@@ -1,0 +1,430 @@
+.title
+{
+	font-family: Avenir;
+    font-size: 4vw; 
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 43vh;
+    left: 66vw;
+}
+.object{
+	font-family: Avenir;
+    font-size: 3vw;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 45vh;
+    left: 35vw;
+}
+
+.text1{
+	font-family: Avenir;
+    font-size: 2vw;
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 54vh;
+    left: 9vw;
+}
+a.text1{
+	text-decoration: none;
+}
+a.text1:hover{
+	font-size: 3vw;
+}
+.text2{
+	font-family: Avenir;
+    font-size: 2vw;
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    transform: rotate(-90deg);
+   	top: 37vh;
+    left: 7.5vw;
+}
+a.text2{
+	text-decoration: none;
+}
+a.text2:hover{
+	font-size: 3vw;
+}
+.text3{
+	font-family: Avenir;
+    font-size: 2vw;
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+   	top: 20vh;
+    left: 26vw;
+}
+a.text3{
+	text-decoration: none;
+}
+a.text3:hover{
+	font-size: 3vw;
+}
+.text4{
+	font-family: Avenir;
+    font-size: 2vw;
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+   	top: 20vh;
+    left: 34.6vw;
+}
+a.text4{
+	text-decoration: none;
+}
+a.text4:hover{
+	font-size: 3vw;
+}
+.text5{
+	font-family: Avenir;
+    font-size: 2vw;
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+   	top: 20vh;
+    left: 43Vw;
+}
+a.text5{
+	text-decoration: none;
+}
+a.text5:hover{
+	font-size: 3vw;
+}
+a.text6{
+	text-decoration: none;
+}
+a.text6:hover{
+	font-size: 3vw;
+}
+.text6{
+	font-family: Avenir;
+    font-size: 2vw;
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+   	top: 20vh;
+    left: 17.6vw;
+}
+.text7{
+	font-family: Avenir;
+    font-size: 1.8vw;
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+   	top: 18.5vh;
+    left: 52.3Vw;
+}
+a.text7{
+	text-decoration: none;
+}
+a.text7:hover{
+	font-size: 3vw;
+}
+.text8{
+	font-family: Avenir;
+    font-size: 1.8vw;
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+   	top: 18.5vh;
+    left: 61.3Vw;
+}
+a.text8{
+	text-decoration: none;
+}
+a.text8:hover{
+	font-size: 3vw;
+}
+
+
+
+a.text9{
+	text-decoration: none;
+}
+a.text9:hover{
+	font-size: 3vw;
+}
+.text9{
+	font-family: Avenir;
+    font-size: 2vw;
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+   	top: 72vh;
+    left: 17vw;
+}
+a.text10{
+	text-decoration: none;
+}
+a.text10:hover{
+	font-size: 3vw;
+}
+.text10{
+	font-family: Avenir;
+    font-size: 2vw;
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+   	top: 69vh;
+    left: 26.8vw;
+}
+a.text11{
+	text-decoration: none;
+}
+a.text11:hover{
+	font-size: 3vw;
+}
+.text11{
+	font-family: Avenir;
+    font-size: 1.9vw;
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+   	top: 72vh;
+    left: 34.3vw;
+}
+a.text12{
+	text-decoration: none;
+}
+a.text12:hover{
+	font-size: 3vw;
+}
+.text12{
+	font-family: Avenir;
+    font-size: 1.9vw;
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+   	top: 72vh;
+    left: 43.1vw;
+}
+a.text13{
+	text-decoration: none;
+}
+a.text13:hover{
+	font-size: 3vw;
+}
+.text13{
+	font-family: Avenir;
+    font-size: 1.8vw;
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+   	top: 72vh;
+    left: 52vw;
+}
+a.text14{
+	text-decoration: none;
+}
+a.text14:hover{
+	font-size: 3vw;
+}
+.text14{
+	font-family: Avenir;
+    font-size: 2vw;
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+   	top: 72vh;
+    left: 65.7VW;
+}
+.tables{
+	top:13vh;
+	position: absolute;
+}
+.square {
+	width: 17vh;
+    height: 8.5vw;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    position: absolute;
+    left: 33vw;
+}
+.square2 {
+	width: 17vh;
+    height: 8.5vw;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    position: absolute;
+    left: 42vw;
+}
+.square3 {
+	width: 17vh;
+    height: 8.5vw;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    position: absolute;
+    left: 51vw;
+}
+.square4 {
+	width: 17vh;
+    height: 8.5vw;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    position: absolute;
+    left: 60vw;
+}
+
+
+.square5 {
+	width: 17vh;
+    height: 8.5vw;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    position: absolute;
+    left: 15vw;
+}
+.square6 {
+	width: 17vh;
+    height: 8.5vw;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    position: absolute;
+    left: 6vw;
+}
+.square7 {
+	width: 17vh;
+    height: 8.5vw;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    position: absolute;
+    left: 24vw;
+}
+.square8 {
+	width: 17vh;
+    height: 8.5vw;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    position: absolute;
+    left: 6vw;
+    top: 17.5vh;
+}
+
+.square9 {
+	width: 17vh;
+    height: 8.5vw;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    position: absolute;
+    left: 6vw;
+    top: 35vh;
+}
+
+
+.square10 {
+	width: 17vh;
+    height: 8.5vw;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    position: absolute;
+    left: 6vw;
+    top: 52.5vh;
+}
+.square11 {
+	width: 17vh;
+    height: 8.5vw;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    position: absolute;
+    left: 15vw;
+    top: 52.5vh;
+}
+.square12 {
+	width: 17vh;
+    height: 8.5vw;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    position: absolute;
+    left: 24vw;
+    top: 52.5vh;
+}
+.square13 {
+	width: 17vh;
+    height: 8.5vw;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    position: absolute;
+    left: 33vw;
+    top: 52.5vh;
+}
+.square14 {
+	width: 17vh;
+    height: 8.5vw;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    position: absolute;
+    left: 42vw;
+    top: 52.5vh;
+}
+.square15 {
+	width: 17vh;
+    height: 8.5vw;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    position: absolute;
+    left: 51vw;
+    top: 52.5vh;
+}
+.square16 {
+	width: 17vh;
+    height: 8.5vw;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    position: absolute;
+    left: 64vw;
+    top: 52.5vh;
+}
+
+.screen{
+	width: 7vh;
+    height: 35.5vw;
+    border-style: solid;
+    background-color: black;
+    position: absolute;
+    left: 75vw;
+}
