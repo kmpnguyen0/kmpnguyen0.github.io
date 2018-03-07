@@ -1,0 +1,62 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	margin:0;
+    padding:0;
+}
+
+.lightblue{
+	width: 35.333%;
+	height: 25.333%;
+	background-color: #69BAD5;
+	border: 10px solid #69BAD5;
+	position: absolute;
+	top: 30%;
+  	left: 30%;
+  	margin:0;
+    padding:0;
+  	
+}
+
+.dark1{
+	width: 5%;
+	height: 10%;
+	background-color: #464EB3;
+	border: 10px solid #464EB3;
+	position: absolute;
+	top: -5%;
+  	left: -2%;
+}
+
+.dark2{
+	width: 5%;
+	height: 10%;
+    background-color: #464EB3;
+    border: 10px solid #464EB3;
+    position: absolute;
+    top: -5%;
+    left: 93%;
+}
+
+.dark3{
+	width: 5%;
+	height: 10%;
+	background-color: #464EB3;
+	border: 10px solid #464EB3;
+	position: absolute;
+	top: 84%;
+  	left: -2%;
+}
+
+.dark4{
+	width: 5%;
+	height: 10%;
+    background-color: #464EB3;
+    border: 10px solid #464EB3;
+    position: absolute;
+    top: 84%;
+    left: 93%;
+}
+
+/* Your styles go here */

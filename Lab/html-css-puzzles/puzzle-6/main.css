@@ -1,0 +1,22 @@
+/* Your styles go here */
+.textwhole{
+	display:inline-block;
+	font-family: 'Krona One', sans-serif;
+}
+
+.text{
+	font-size: 8vw;
+	color: black;
+	display:inline-block;
+}
+.textred{
+	font-size: 8vw;
+	color: red;
+	display:inline-block;
+}
+
+.cite{
+	font-family: sans-serif;
+	font-size: 2vw;
+	color: black;
+}

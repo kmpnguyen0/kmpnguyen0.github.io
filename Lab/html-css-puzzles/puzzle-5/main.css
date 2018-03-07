@@ -1,0 +1,51 @@
+html,
+body {
+	margin: 0;
+	margin:0;
+    padding:0;
+}
+.yellow{
+	width: 100%;
+	height: 40%;
+	background-color: #EBBB36;
+	border: 20% solid #EBBB36;
+	position: absolute;
+}
+
+.pink{
+	width: 100%;
+	height: 80%;
+	background-color: #D7CAC5;
+	border: 20% solid #D7CAC5;
+	position: absolute;
+}
+.black{
+	width: 100%;
+	height: 40%;
+	background-color: black;
+	border: 20% solid black;
+	position: absolute;
+	bottom:0;
+}
+.boder{
+	width: 92%;
+	height: 84%;
+	background-color:transparent;
+	border: 60px solid #B04A2B;
+	position: absolute;
+}
+@media (max-width:800px) {
+  .yellow {
+    background-color: #371225;
+  }
+   .pink {
+    background-color: #4459B5;
+  }
+  .black {
+    background-color: #3E3C5D;
+  }
+  .boder{
+  	background-color: #45456F;
+  }
+}
+/* Your styles go here */

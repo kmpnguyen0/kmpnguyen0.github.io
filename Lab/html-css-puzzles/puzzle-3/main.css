@@ -1,0 +1,53 @@
+/* Your styles go here */
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+.lime1{
+	width: 31.7%;
+	height: 30.333%;
+	background-color: #D0DE3D;
+	border: 10px solid #D0DE3D;
+
+}
+.lime2{
+	width: 31.7%;
+	height: 30.333%;
+	background-color: #D0DE3D;
+	border: 10px solid #D0DE3D;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.lime3{
+	width: 31.7%;
+	height: 30.333%;
+	background-color: #D0DE3D;
+	border: 10px solid #D0DE3D;
+	position: absolute;
+	top: 66.666%;
+}
+.lime4{
+	width: 31.7%;
+	height: 30.333%;
+	background-color: #D0DE3D;
+	border: 10px solid #D0DE3D;
+	position: absolute;
+	right: 0;
+	top: 66.666%;
+}
+.blue{
+	width: 31.7%;
+	height: 30.333%;
+	background-color: #697C8B;
+	border: 10px solid #697C8B;
+	position: absolute;
+	right: 33.5%;
+	top: 33.3%;
+}
+.centered {
+	top: 50%;
+	margin-top: -10%;
+}

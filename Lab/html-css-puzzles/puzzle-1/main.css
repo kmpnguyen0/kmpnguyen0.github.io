@@ -1,0 +1,15 @@
+/* Your styles go here */
+body{
+}
+.text{
+	font-family: Avenir;
+	font-weight: 500;
+	font-size: 40px;
+	border:20px;
+	padding:25px;
+	padding-right: 30px; 
+	border-width: : 6px 10px 4px 20px;
+    background-color: lightgrey;
+    display:inline-block;
+    margin: 5px;
+}
