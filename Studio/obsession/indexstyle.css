@@ -1,0 +1,129 @@
+body{
+	margin: 0;
+    padding: 0;
+    }
+
+a.title {
+	font-family: "Times-Sans-Serif",sans-serif;
+    font-size: 6vw;
+    color:black;
+    position: relative;
+    left:5vw;
+    top:4vh;
+    text-decoration: none;
+}
+.subtitle{
+	font-family: "Times-Sans-Serif",sans-serif;
+    font-size: 1.4vw;
+    color:black;
+    position: relative;
+    left:6vw;
+}
+.rectangle-1 {
+    position: absolute;
+    width: 33.33%;
+    height: 75%;
+    background: #ffc32b;
+    bottom:0px;
+}
+.rectangle-1-list {
+    position: absolute;
+    width: 55%;
+    height: 70%;
+    background: white;
+    border: 5px solid black;
+    bottom:14vh;
+    left:7vw;
+    overflow: scroll;
+    text-align: center;
+}
+.image{
+    position: relative;
+    height:45vh;
+  /*  left:5%;
+    bottom:3vh;*/
+}
+.part1{
+	font-family: "Times-Sans-Serif",sans-serif;
+    font-size: 2vw;
+    color:black;
+    position: absolute;
+    bottom:0;
+    left:7vw;
+}
+.rectangle-2 {
+	position: absolute;
+    width: 33.33%;
+    height: 75%;
+    background: #9E8400;
+    left:33.33%;
+    bottom:0px;
+    display: inline-block;
+}
+.rectangle-2-list {
+    position: absolute;
+    width: 55%;
+    height: 70%;
+    background: white;
+    border: 5px solid black;
+    bottom:14vh;
+    left:7vw;
+    overflow: scroll;
+    text-align: center;
+}
+.part2{
+	font-family: "Times-Sans-Serif",sans-serif;
+    font-size: 2vw;
+    color:black;
+    position: absolute;
+    bottom:0;
+    left:7vw;
+}
+.rectangle-3 {
+    position: absolute;
+    width: 33.33%;
+    height: 75%;
+    background: #ffc32b;
+    bottom:0px;
+    right:0px;
+    display: inline-block;
+}   
+.rectangle-3-list {
+    position: absolute;
+    width: 55%;
+    height: 70%;
+    background: white;
+    border: 5px solid black;
+    bottom:14vh;
+    left:7vw;
+    overflow: scroll;
+    text-align: center;
+}
+.part3{
+	font-family: "Times-Sans-Serif",sans-serif;
+    font-size: 2vw;
+    color:black;
+    position: absolute;
+    bottom:0;
+    left:7vw;
+}
+
+
+
+/* SCROLLBAR OVERRIDES */
+.rectangle-1-list::-webkit-scrollbar{
+	background: rgba(0,0,0,0) !important;
+	width:0;
+	height:0;
+}
+
+
+
+
+
+
+
+
+
+
+

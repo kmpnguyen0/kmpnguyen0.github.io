@@ -1,0 +1,95 @@
+body{
+	margin: 0;
+    padding: 0;
+    }
+
+a.title {
+	font-family: "Times-Sans-Serif",sans-serif;
+    font-size: 6vw;
+    color:black;
+    position: relative;
+    left:5vw;
+    top:2vh;
+    text-decoration: none;
+    z-index: 2;
+}
+.subtitle{
+	font-family: "Times-Sans-Serif",sans-serif;
+    font-size: 1.4vw;
+    color:black;
+    position: relative;
+    left:6vw;
+    top:-2vh;
+    z-index: 2;
+}
+.rectangle-1 {
+    position: absolute;
+    width: 100%;
+    height: 22%;
+    background: #ffc32b;
+    top:0px;
+}
+.image{
+    position: absolute;
+    height:70vh;
+    border: 0.5vw solid black;
+    left:20%;
+    bottom:3vh;
+}
+.subtitle2{
+    font-family: "Times-Sans-Serif",sans-serif;
+    font-size: 2.4vw;
+    color:black;
+    position: relative;
+    left:48.5vw;   
+}
+.category{
+    font-family: Avenir;
+    font-size: 1.5vw;
+    color:black;
+    position: relative;
+    left:48.5vw;  
+    line-height: 1.2em;
+}
+.category,
+.boldtext,
+.text {
+    white-space: nowrap;
+}
+.boldtext {
+    font-weight: bold;
+}
+.boldtext,
+.text {
+    display: inline-block;
+}
+.content{
+    font-family: Avenir;
+    font-size: 1vw;
+    width: 25vw;
+    color:black;
+    position: relative;
+    left:48.5vw;  
+    line-height: 1.2em;
+}
+.arrow-left{
+    width:5vw;
+    left:3vw;
+    position: absolute;
+    top:50%;
+}
+
+.arrow-left:hover {
+    width:6vw;
+}
+.arrow-right{
+    width:5vw;
+    right:3vw;
+    position: absolute;
+    top:50%;
+    transform: scaleX(-1);
+}
+.arrow-right:hover {
+    width:6vw;
+}
+
