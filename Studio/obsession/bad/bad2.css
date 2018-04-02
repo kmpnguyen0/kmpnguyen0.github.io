@@ -1,0 +1,121 @@
+body{
+	margin: 0;
+    padding: 0;
+    width:100vw;
+    overflow:hidden;
+    }
+@font-face{
+    font-family: Time;
+    src: url(Times-Sans-Serif/Times-Sans-Serif.ttf);
+}
+.rectangle-top{
+    position: absolute;
+    width: 100vw;
+    height: 2vh;
+    background: #ffc32b;
+    top:0;
+}
+a.title {
+    font-family: Time,sans-serif;
+    font-size: 4vw;
+    color:black;
+    position: relative;
+    left:4vw;
+    top:2.5vh;
+    text-decoration: none;
+}
+.subtitle{
+    font-family: Time,sans-serif;
+    font-size: 1.3vw;
+    color:black;
+    position: relative;
+    left:4.5vw;
+    top:-1.5vh;
+}
+
+.image{
+    /*position: absolute;
+    height: 220vh;
+    left: 36%;
+    bottom: -73vh;*/
+
+    position: absolute;
+    height: 220vh;
+    object-fit: cover;
+    height: 100%;
+    width: 50%;
+    top: 2vh;
+    right: 8vw;
+}
+.subtitle2{
+    font-family: Time,sans-serif;
+    font-size: 2.4vw;
+    color:black;
+    position: absolute;
+    left: 4.5vw;
+    top:85vh;  
+}
+.object-title-content{
+    position: absolute;
+    left: -40vw;
+    top: 40vh;
+    text-align: center;
+}
+.boldtext,
+.text {
+    white-space: nowrap;
+}
+.boldtext {
+    font-weight: bold;
+}
+.boldtext,
+.text {
+    font-family: Avenir;
+    font-size: 1.5vw;
+    color:black;
+    position: relative;
+    left:44.5vw;  
+    line-height: 1.2em;
+    display: inline-block;
+}
+.content{
+    font-family: Avenir;
+    font-size: 1.1vw;
+    width: 28vw;
+    color:black;
+    position: relative;
+    left:44.5vw;  
+    line-height: 1.8em;
+}
+.object-title{
+    font-family: Time,sans-serif;
+    font-size: 3vw;
+    width: 25vw;
+    left: 5.5vw;
+    top:19.5vh;
+    color:black;
+    position: absolute;
+    text-align: center;
+    line-height:1em;
+}
+
+.arrow-left{
+    width:2.5vw;
+    left:3.5vw;
+    top: 26vh;
+    position: absolute;
+}
+.arrow-left:hover {
+    width:3vw;
+}
+.arrow-right{
+    width:2.5vw;
+    right: 67.5vw;
+    top: 26vh;
+    position: absolute;
+    transform: scaleX(-1);
+}
+.arrow-right:hover {
+    width:3vw;
+}
+
