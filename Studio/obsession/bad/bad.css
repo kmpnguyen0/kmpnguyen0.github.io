@@ -1,36 +1,96 @@
 body{
-	margin: 0;
-    padding: 0;
+    margin: 0;
     width:100vw;
-    overflow:hidden;
+    overflow: scroll;
     }
 @font-face{
     font-family: Time;
     src: url(Times-Sans-Serif/Times-Sans-Serif.ttf);
 }
 .rectangle-top{
-    position: absolute;
-    width: 100vw;
+    position: fixed;
+    width: 120vw;
     height: 2vh;
+    left:0;
     background: #ffc32b;
     top:0;
+    z-index: 4;
+}
+.fixed-title{
+    position: fixed;
+    bottom:2%;
+    margin-left:3%;
+    line-height: 1.2em;
+}
+.wholetext{
+    position:fixed;
 }
 a.title {
     font-family: Time,sans-serif;
     font-size: 4vw;
     color:black;
-    position: relative;
-    left:4vw;
-    top:2.5vh;
+    display: block;
     text-decoration: none;
 }
 .subtitle{
     font-family: Time,sans-serif;
     font-size: 1.3vw;
     color:black;
-    position: relative;
-    left:4.5vw;
-    top:-1.5vh;
+    display: block;
+    margin-left: 0.5vw;
+
+}
+.subtitle2{
+    font-family: Time,sans-serif;
+    font-size: 2.4vw;
+    color: black;
+    margin-left: 1.5%;
+    margin-top: -2%;
+    width: 100%;
+}
+
+.link-back{
+    font-family: Time,sans-serif;
+    font-size: 2.4vw;
+    color: black;
+    position:fixed;
+    margin-left: 89%;
+    margin-top: 42%;
+    }
+a.link-back{
+    text-decoration: none;
+}
+.link-next{
+    font-family: Time,sans-serif;
+    font-size: 2.4vw;
+    color: black;
+    position:fixed;
+    margin-left: 91%;
+    margin-left: 89%;
+    margin-top: 44.5%;
+    }
+a.link-next{
+    text-decoration: none;
+}
+
+.next-back{
+ display: none;
+}
+
+
+
+
+.link-home{
+    font-family: Time,sans-serif;
+    font-size: 2.4vw;
+    color: black;
+    position:fixed;
+    margin-left: 91%;
+    margin-left: 89%;
+    margin-top: 44.5%;
+    }
+a.link-home{
+    text-decoration: none;
 }
 
 .image{
@@ -38,28 +98,29 @@ a.title {
     height: 220vh;
     left: 36%;
     bottom: -73vh;*/
-
-    position: absolute;
+    float:right;
+    display: inline-block;
     height: 220vh;
     object-fit: cover;
     height: 100%;
+    width: 60%;
+    margin-top: -6%;
+
+}
+.image img{
+    width: 119%;
+    margin-top: 11%;
+    margin-left: -11%;
+}
+.image.mobile{
+    display: none;
+}
+
+.wholetext{
     width: 80%;
-    top: 2vh;
-    right: -15vw;
-}
-.subtitle2{
-    font-family: Time,sans-serif;
-    font-size: 2.4vw;
-    color:black;
-    position: absolute;
-    left: 4.5vw;
-    top:85vh;  
-}
-.object-title-content{
-    position: absolute;
-    left: -40vw;
-    top: 40vh;
-    text-align: center;
+    display: inline-block;
+    padding: 0%;
+    margin-left: 3.5vw;
 }
 .boldtext,
 .text {
@@ -74,48 +135,462 @@ a.title {
     font-size: 1.5vw;
     color:black;
     position: relative;
-    left:44.5vw;  
-    line-height: 1.2em;
+    margin-top: 2%;
+    line-height: 1.0em;
     display: inline-block;
 }
 .content{
     font-family: Avenir;
     font-size: 1.1vw;
-    width: 28vw;
     color:black;
-    position: relative;
-    left:44.5vw;  
-    line-height: 1.8em;
+    position: relative;  
+    line-height: 1.5em;
+    width: 30%;
 }
 .object-title{
     font-family: Time,sans-serif;
     font-size: 3vw;
-    width: 25vw;
-    left: 5.5vw;
-    top:19.5vh;
+    color:black;
+    margin-top: 10%;
+    line-height:1em;
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.navigator{}
+
+.menutitle,.menu{
+    display: inline-block;
+}
+.menutitle{
+    font-family: Time,sans-serif;
+    font-size: 1.7vw;
+    color:black;
+    position: fixed;
+    right: 19vw;
+    top: 7.5vh;
+}
+.menutitle:hover{
+    font-size: 2.2vw;
+    top: 6.5vh;
+}
+a.menutitle{
+    text-decoration: none;
+}
+
+/* MENU */
+.menu{
+    font-family: Time,sans-serif;
+    font-size: 1.7vw;
+    color:black;
+    position: fixed;
+    right:5vw;
+    top:4vh;
+    overflow: hidden;
+}
+.menu:hover{
+    font-size: 2.2vw;
+    right:3vw;
+    top:2vh
+}
+.menu-list{
+    background-color: white;
+    position: absolute;
+    width: 100vw;
+    height: 110vh;
+    left: 0;
+    top:0;
+    transition: 0.5s;
+    overflow: scroll;
+    display: none;
+}
+.menu-list.open{
+    display: block;
+ /*   transform: none;*/
+    animation: 0.5s moveup ease-in;
+}
+
+@keyframes moveup {
+  0% {
+    display: none;
+    transform: translateY(100vh);
+  }
+  50% {
+    display: block;
+    transform: none;
+  }
+  100% {
+    display: block;
+    transform: none;
+  }
+}
+
+.rectangle-menu-decor{
+    position: relative;
+    width: 100vw;
+    height: 2vh;
+    background: #ffc32b;
+    top: -3vh;
+
+}
+.menu2{
+    font-family: Time,sans-serif;
+    font-size: 7vw;
     color:black;
     position: absolute;
+    right:4vw;
+    top:-9vh;
+}
+.menu-blur-text{
+    font-family: Time,sans-serif;
+    font-size: 5.2vw;
+    color:#C8C8C8;
+    position: absolute;
+    right:4vw;
+    top:24vh;
+    text-align:right;
+    line-height: 1.2em;
+}
+
+.menu-blur-text-2{
+    font-family: Desdemona;
+    font-size: 3.5vw;
+    color:#C8C8C8;
+    position: absolute;
+    right: 15vw;
+    top:70vh;
+    text-align:center;
+    line-height: 1.2em;
+}
+.cross{
+    position:absolute;
+    top:8vh;
+    left:5vw;
+    height:12vh;
+}
+.part1-menu{
+    font-family: Time,sans-serif;
+    font-size: 2vw;
+    color:black;
+    position: absolute;
+    left:6.5vw;
+    top:28vh;
+    line-height: 1.2em;
+}
+
+.part2-menu{
+    font-family: Time,sans-serif;
+    font-size: 2vw;
+    color:black;
+    position: absolute;
+    left: 36.5vw;
+    top:28vh;
+    line-height: 1.2em;
+    display: inline-block;
+}
+
+.part3-menu{
+    font-family: Time,sans-serif;
+    font-size: 2vw;
+    color:black;
+    position: absolute;
+    left: 65.5vw;
+    top:28vh;
+    line-height: 1.2em;
+    display: inline-block;
+}
+
+.part1-menu-list{
+    font-family: Time,sans-serif;
+    font-size: 1vw;
+    color:black;
+    position: relative;
+    left:11vw;
+    top:45vh;
+    line-height: 1.2em;
+}
+.part1-menu-list:hover{
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+a.part1-menu-list{
+    text-decoration: none;
+}
+
+a.part1-menu-list:visited {
+    color:black;
+}
+
+
+.part2-menu-list{
+    font-family: Time,sans-serif;
+    font-size: 1vw;
+    color:black;
+    position: relative;
+    left: 41vw;
+    top:-12vh;
+    line-height: 1.2em;
+}
+.part2-menu-list:hover{
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+a.part2-menu-list{
+    text-decoration: none;
+}
+
+a.part2-menu-list:visited {
+    color:black;
+}
+
+.part3-menu-list{
+    font-family: Time,sans-serif;
+    font-size: 1vw;
+    color:black;
+    position: relative;
+    left: 70vw;
+    top:0vh;
+    line-height: 1.2em;
+}
+.part3-menu-list:hover{
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+a.part3-menu-list{
+    text-decoration: none;
+}
+
+a.part3-menu-list:visited {
+    color:black;
+}
+
+.menu-list::-webkit-scrollbar{
+    background: rgba(0,0,0,0) !important;
+    width:0;
+    height:0;
+}
+.part2-menu-list-whole-1{
+    margin-top: -33vh;;
+}
+.part3-menu-list-whole-1{
+    margin-top: -102vh;;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px){
+    .image.mobile{
+        display: block;
+        float:none;
+        margin:0 auto;
+        padding:0;
+        margin-top: 6vh;
+        width: 103%;
+    }
+   .image.mobile.no-margin{
+    margin-top:6vh;
+   }
+    .wholetext{
+        position:relative;
+    }
+    .image{
+        display: none;
+    }
+    .wholetext{
+        width: 90%;
+        display: block;
+    }
+    .fixed-title {
+    position: relative;
+    top: 5%;
+    width: 60%;
+    left: 2%;
+    line-height: 0.9em;
+    }
+    a.title{
+    font-size: 6vw; 
+    margin-top: 4vh; 
+    }
+    .subtitle{
+    margin-top:0%;
+    font-size: 2vw;
+    margin-left: 0.8vw; 
+    }
+    .subtitle2 {
+    font-size: 4.4vw;
+    color: black;
+    margin-left: 0.5%;
+    margin-top: -3.2%;
+    }
+    .arrow-right{
+        right:3.5vw;
+    }
+    .rectangle-top{
+      height: 1vh; 
+    }
+    .navigator{
+    }
+    .menutitle{
+    top: 4vh;
+    right: 5vw;
+    font-size:5vw;
+    display:block;
+    z-index: 5;
+    }
+    
+    .link-home {
+    position: absolute;
+    font-size: 10vw;
+    right: 40vw;
+    top: 170vh;
+    }
+    .object-title{
+    font-size: 6vh;
+    width: 100%;
     text-align: center;
-    line-height:1em;
-}
-
-.arrow-left{
-    width:2.5vw;
-    left:3.5vw;
-    top: 26vh;
+    }
+    .object-title-content{
+    text-align: center;
+    }
+    .boldtext, .text{
+    font-size: 2.7vh;
+    }
+    .content{
+    font-size: 2.1vh;
+    width:100%;
+    }
+    .link-next{
     position: absolute;
+    font-size: 10vw;
+    right: 22vw;
+    top: 158.8vh;
+    }
+    .link-back{
+        position: absolute;
+    font-size: 10vw;
+    right: 42vw;
+    top: 160vh;
+    }
+.next-back{
+    display:block;
 }
-.arrow-left:hover {
-    width:3vw;
+.next-back-2{
+    display:none;
 }
-.arrow-right{
-    width:2.5vw;
-    right: 67.5vw;
-    top: 26vh;
-    position: absolute;
-    transform: scaleX(-1);
-}
-.arrow-right:hover {
-    width:3vw;
-}
+/* MENU */
+    .menu{
+    font-size: 2.2vh;
+    line-height: 1.6em;
+    margin: 0;
+    top: 4.5vh;
+    right: 5vw;
+    z-index: 1;
+    }
 
+    .menu-list{
+    height: 270vh;
+    }
+    .cross{
+    top:8vh;
+     height:7vh;
+    left: 77vw;  
+    }
+
+    .menu2{
+    font-size: 13vw;
+    top: 0vh;
+    left: 9vw;
+    }
+    .part1-menu{
+    font-size: 8vw;
+    position: absolute;
+    left: -6vw;
+    top: 18vh;
+    line-height: 1em;
+    }
+
+    .part1-menu-list-whole-1, .part1-menu-list-whole-2{
+    display: inline-block;
+    width: 41%;
+    line-height: 1.5em;
+    margin-left: 0vw;
+    margin-top: -10vh;
+    }
+    .part1-menu-list{
+    font-size: 3.5vw;
+    }
+
+    .part2-menu{
+    font-size: 8vw;
+    position: absolute;
+    left: -7vw;
+    top: 102vh;
+    line-height: 1.2em;
+    }
+
+    .part2-menu-list-whole-1, .part2-menu-list-whole-2{
+    display: inline-block;
+    width: 71%;
+    line-height: 1.5em;
+    margin-left: -30%;
+    margin-top: 81vh;
+    }
+    .part2-menu-list{
+    font-size: 3.5vw;
+    }
+    .menu-blur-text, .menu-blur-text-2{
+    display:none;}
+
+    .part3-menu{
+    font-size: 8vw;
+    position: absolute;
+    left: -6vw;
+    top: 187vh;
+    line-height: 1.2em;
+    }
+
+    .part3-menu-list-whole-1{
+    display: inline-block;
+    width: 72%;
+    line-height: 1.5em;
+    margin-left: -30%;
+    margin-top: 2vh;
+
+    }
+    .part3-menu-list-whole-2{
+          display: inline-block;
+    width: 54%;
+    line-height: 1.5em;
+    margin-left: -31%;
+    margin-top: -7vh;
+    }
+    .part3-menu-list{
+    font-size: 3.5vw;
+    left: 41vw;
+    top: 9vh;
+    }
+
+
+
+
+
+
+
+
+}

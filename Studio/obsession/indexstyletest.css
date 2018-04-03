@@ -469,9 +469,9 @@ a.part3-menu-list:visited {
     .part2-menu-list-whole-1, .part2-menu-list-whole-2{
     display: inline-block;
     width: 71%;
-    line-height: 1.2em;
+    line-height: 1.5em;
     margin-left: -30%;
-    margin-top: 78vh;
+    margin-top: 75vh;
     }
     .part2-menu-list{
     font-size: 3.5vw;
@@ -483,19 +483,29 @@ a.part3-menu-list:visited {
     font-size: 8vw;
     position: absolute;
     left: -54vw;
-    top: 165vh;
+    top: 175vh;
     line-height: 1.2em;
     }
 
-    .part3-menu-list-whole-1, .part3-menu-list-whole-2{
+    .part3-menu-list-whole-1{
     display: inline-block;
-    width: 71%;
-    line-height: 1.2em;
+    width: 72%;
+    line-height: 1.5em;
     margin-left: -30%;
-    margin-top: 7vh;
+    margin-top: -1vh;
+
+    }
+    .part3-menu-list-whole-2{
+          display: inline-block;
+    width: 54%;
+    line-height: 1.5em;
+    margin-left: -31%;
+    margin-top: -7vh;
     }
     .part3-menu-list{
     font-size: 3.5vw;
+    left: 41vw;
+    top: 9vh;
     }
 
 
