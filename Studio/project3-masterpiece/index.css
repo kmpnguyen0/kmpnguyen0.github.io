@@ -1,0 +1,61 @@
+body {
+	background-color: #f5e200;
+	margin:0;
+	padding: 0;
+}
+
+.stick {
+	margin-right: 2vw;
+	transform-origin: 50% 50%;
+}
+
+.cursor{
+	cursor:pointer;
+}
+
+.rotate {
+	transform: rotate(5deg);
+	transition: transform 0.2s linear;
+}
+
+.rotateBack {
+	transform: rotate(0deg);
+	transition: transform 0.2s linear;
+}
+.rotate:hover {
+	cursor: url('download (2).png'), pointer;
+	z-index: 2;
+}
+
+.top-role {
+	position:absolute;
+	top: 6vh;
+	left: 6vw;
+	display:inline;
+	margin-right: 4vw;
+}
+
+.bottom-role {
+	position:absolute;
+	top: 52vh;
+	left: 6vw;
+	display:inline;
+	margin-right: 4vw;
+}
+
+.rectangle-menu-decor{
+	width: 100vw;
+	height: 100vh;
+	background:black;
+	opacity: 0.9;
+	position: fixed;
+}
+
+.menu-text{
+	font-size: 5vw;
+	width: 80vw;
+	color: white;
+	position:absolute;
+	left:8vw;
+}
+

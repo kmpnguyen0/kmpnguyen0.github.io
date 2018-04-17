@@ -1,0 +1,40 @@
+body{
+	margin:0;
+	background: black;
+	}
+img.full {
+	left: 6vw;
+    top: 7vh;
+    width: 42vh;
+    position: absolute;
+
+}
+.video1{
+	left: 32vw;
+    top: 20vh;
+    width: 120vh;
+    position: absolute;
+}
+.title{
+	font: Franklin Gothic, serif;
+	font-weight:bold;
+	font-size: 10vh;
+	color: yellow;
+	position: absolute;
+	left: 32vw;
+	margin: 0;
+	top:5vh;
+
+}
+.side{
+	left: 36vw;
+    top: 100vh;
+    width: 100vh;
+    position: absolute;
+}
+.video2{
+	left: 3vw;
+    top: 150vh;
+    width: 70vh;
+    position: absolute;
+}
