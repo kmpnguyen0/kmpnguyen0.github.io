@@ -1,0 +1,21 @@
+/* Your styles go here */
+.question1{
+	font: "Arial", sans-serif;
+	font-size: 3vw;
+	text-align: center;
+	width: 22vw;
+	height:7vh;
+	border-style:solid;
+	border-color: black;
+	border-width: 2px;
+	position: absolute;
+	left: 38vw;
+	top: 5vh;
+}
+.text{
+	display: none;
+	font-size: 6vw;
+	text-align: center;
+	position: absolute;
+	top: 10vh;
+}

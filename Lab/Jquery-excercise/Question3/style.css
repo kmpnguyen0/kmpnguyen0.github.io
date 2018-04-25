@@ -1,0 +1,90 @@
+/* Your styles go here */
+.question1{
+	font: "Arial", sans-serif;
+	font-size: 2vw;
+	text-align: center;
+	width: 20vw;
+	height:5vh;
+	border-style:solid;
+	border-color: black;
+	border-width: 2px;
+	position: absolute;
+	left: 38vw;
+	top: 8vh;
+}
+.box{
+	position:absolute;
+	top:20vh;
+	left:17vw;
+/*	display: inline-block;
+*/}
+
+.box-item {
+	display: inline-block;
+	float: left;
+	margin:1vw;
+}
+.style1{
+	font: "Arial", sans-serif;
+	font-size: 8vw;
+	color: purple;
+	text-align: center;
+	width: 10vw;
+	height:10vw;
+	border-style:solid;
+	border-color: purple;
+	border-width: 2px;
+	position: relative;
+}
+.style2{
+	font: "Arial", sans-serif;
+	font-size: 8vw;
+	color: purple;
+	text-align: center;
+	width: 10vw;
+	height:10vw;
+	border-style:solid;
+	border-color: purple;
+	border-width: 2px;
+	position: relative;
+}
+.style3{
+	font: "Arial", sans-serif;
+	font-size: 8vw;
+	color: purple;
+	text-align: center;
+	width: 10vw;
+	height:10vw;
+	border-style:solid;
+	border-color: purple;
+	border-width: 2px;
+	position: relative;
+}
+.style4{
+	font: "Arial", sans-serif;
+	font-size: 8vw;
+	color: purple;
+	text-align: center;
+	width: 10vw;
+	height:10vw;
+	border-style:solid;
+	border-color: purple;
+	border-width: 2px;
+	position: relative;
+}
+.style5{
+	font: "Arial", sans-serif;
+	font-size: 8vw;
+	color: purple;
+	text-align: center;
+	width: 10vw;
+	height:10vw;
+	border-style:solid;
+	border-color: purple;
+	border-width: 2px;
+	position: relative;
+}
+.background {
+	color: white;
+	background:purple;
+}
