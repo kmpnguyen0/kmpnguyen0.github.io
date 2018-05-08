@@ -105,12 +105,13 @@ body{
 }
 
 .note{
-	top: 10vh;
+	top: 15vh;
     left: 50px;
     position: relative;
 }
 .line{
-	position: fixed;
+	position: absolute;
+	top:15vh;
 }
 .letter{
 	font-family: "Bourbon";

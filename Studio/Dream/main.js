@@ -83,7 +83,7 @@ var i = 0, l = song1.length;
         //   moved = true;
         // }
 
-        Y = map(event.pageY, 0, $(window).height(), 0, 400 )
+        Y = map(event.pageY, 0, $(window).height(), 100, 480 )
         //Y = event.pageY - 50
   });
   $("#" + (i)).css('font-family', font)
