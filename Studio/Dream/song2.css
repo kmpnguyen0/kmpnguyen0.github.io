@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Aleo Light Italic";
+  src: url("/font/Aleo-LightItalic.otf") format("otf")
+}
+@font-face {
+  font-family: "Broadcast Matter";
+  src: url("/font/Broadcast_Matter.ttf") format("ttf")
+}
+@font-face {
+  font-family: "Aleo Light Italic";
+  src: url("/font/Aleo-LightItalic.otf") format("otf")
+}
+@font-face {
+  font-family: "Broadcast Matter";
+  src: url("/font/Broadcast_Matter.ttf") format("ttf")
+}
+@font-face {
+  font-family: "Chamfort Family Bold";
+  src: url("/font/ChamfortFamily-Bold.otf") format("otf")
+}
+@font-face {
+  font-family: "Eunomia Bold";
+  src: url("/font/Eunomia-Bold.otf") format("otf")
+}
+@font-face {
+  font-family: "Eunomia Light";
+  src: url("/font/Eunomia-Light.otf") format("otf")
+}
+@font-face {
+  font-family: "Eunomia";
+  src: url("/font/Eunomia-Regular.otf") format("otf")
+}
+@font-face {
+  font-family: "F5.6";
+  src: url("/font/F5.6-Regular.otf") format("otf")
+}
+@font-face {
+  font-family: "Fairview";
+  src: url("/font/Fairview_Regularr.otf") format("otf")
+}
+@font-face {
+  font-family: "Ferrum";
+  src: url("/font/ferrum.otf") format("otf")
+}
+@font-face {
+  font-family: "Kelson Sans Bold";
+  src: url("/font/Kelson-Sans-Bold.otf") format("otf")
+}
+@font-face {
+  font-family: "Kelson Sans Light";
+  src: url("/font/Kelson-Sans-Light.otf") format("otf")
+}
+@font-face {
+  font-family: "Kitchen Sink";
+  src: url("/font/Kitchen-Sink-Regular.otf") format("otf")
+}
+@font-face {
+  font-family: "Oi You";
+  src: url("/font/Oi-You.otf") format("otf")
+}
+@font-face {
+  font-family: "Penna";
+  src: url("/font/Penn.otf") format("otf")
+}
+@font-face {
+  font-family: "Rosario Nocera Light";
+  src: url("/font/Rosario-Nocera-Light.otf") format("otf")
+}
+@font-face {
+  font-family: "Rosario Nocera";
+  src: url("/font/Rosario-Nocera-Regular.otf") format("otf")
+}
+@font-face {
+  font-family: "Rosario Nocera Bold";
+  src: url("/font/Rosario-Nocera-Bol.otf") format("otf")
+}
+@font-face {
+  font-family: "Bitter";
+  src: url("/font/Bitter-Regular.otf") format("otf")
+}
+@font-face {
+  font-family: "FivoSans Bold";
+  src: url("/font/FivoSans-Bold.otf") format("otf")
+}
+@font-face {
+  font-family: "FivoSans Medium";
+  src: url("/font/FivoSans-Medium.otf") format("otf")
+}
+@font-face {
+  font-family: "Fivo Sans Thin";
+  src: url("/font/FivoSans-Thin.otf") format("otf")
+}
+@font-face {
+  font-family: "Bourbon";
+  src: url("/font/BourbonGrotesque-Regular+(1).otf") format("otf")
+}
+  
+
+body{
+	padding:0;
+	margin: 0;
+	width: 100%;
+	height:100%;
+	background: url(background.jpg);
+  cursor: url('cursor.png'), aut;
+}
+
+.note{
+	top: 15vh;
+    left: 50px;
+    position: relative;
+}
+.line{
+	position: absolute;
+	top:8vh;
+}
+.letter{
+	font-family: "Bourbon";
+	position:relative;
+	display: inline-block;
+	font-size:50px;
+    padding-left:10px;
+/*	transition:0.2s;*/
+/*	height:100vh;*/
+}
+.letters{
+	position: absolute;
+	left:0;
+	top:0;
+	width:100vw;
+	height:100vh;
+	z-index: 5;
+	left: 5vw;
+	white-space: nowrap;
+}
+.bar{
+	height:100vh;
+	top:0;
+	background-color: black;
+	width:2px;
+	display: inline-block;
+	position: absolute;
+/*	right:0;*/
+}
+
+.result{
+	background: url(resultbackground.jpg);
+	z-index: 7;
+	width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
