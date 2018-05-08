@@ -105,8 +105,9 @@ body{
 }
 
 .note{
-	top:10vh;
-	left:0;
+	top: 10vh;
+    left: 50px;
+    position: relative;
 }
 .line{
 	position: fixed;

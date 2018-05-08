@@ -1,4 +1,4 @@
-var song1 = '          Salagadoola mechicka boola   Bibbidi-bobbidi-boo!   Put them together and what have you got Bibbidi-bobbidi-boo!   Salagadoola mechicka boola Bibbidi-bobbidi-boo!   It\'ll do magic, believe it or not Bibbidi-bobbidi-boo!   Now, salagadoola means "Mechicka booleroo"   But the thing mabob that does the job   Is bibbidi-bobbidi-boo!   Salagadoola menchicka boola Bibbidi-bobbidi-boo   Put them together what have you got   Bibbidi-bobbidi, Bibbidi-bobbidi Bibbidi-bobbidi boo!'
+var song1 = '            Sing along in 5  -  4  -  3  -  2  -  1 and Go  Salagadoola mechicka boola   Bibbidi-bobbidi-boo!   Put them together and what have you got Bibbidi-bobbidi-boo!  Salagadoola mechicka boola Bibbidi-bobbidi-boo! It\'ll do magic, believe it or not Bibbidi-bobbidi-boo!   Now,salagadoola means "Mechicka booleroo" But the thing mabob that does the job Is bibbidi-bobbidi-boo! Salagadoola menchicka boola Bibbidi-bobbidi-boo Put them together what have you got Bibbidi-bobbidi,Bibbidi-bobbidi Bibbidi-bobbidi boo!'
 
 
 //   audio
@@ -60,12 +60,12 @@ var i = 0, l = song1.length;
 
   //window.scrollBy(30,0)
   if(i > 10){
-    $('html, body').animate({scrollLeft: $("#" + (i - 1)).position().left + 100}, 100)
+    $('html, body').animate({scrollLeft: $("#" + (i - 1)).position().left + 130}, 100)
   }
   
   $('.letters').css('width', $(window).width() + (200 * i))
 
-  if (i % 12 == 0 && (i != 0)) {
+  if (i % 16 == 0 && (i != 0)) {
     var line = $('<div></div>');
     $(line).addClass('bar');
     $('.letters').append(line) 
@@ -88,7 +88,7 @@ var i = 0, l = song1.length;
   });
   $("#" + (i)).css('font-family', font)
   if(++i < l){
-    setTimeout(iterator, 100); //SPEED in milliseconds
+    setTimeout(iterator, 80); //SPEED in milliseconds
   } else{
 
   }
