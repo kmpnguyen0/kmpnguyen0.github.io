@@ -83,12 +83,12 @@ var i = 0, l = song1.length;
         //   moved = true;
         // }
 
-        Y = map(event.pageY, 0, $(window).height(), -200, 300 )
+        Y = map(event.pageY, 0, $(window).height(), 0, 400 )
         //Y = event.pageY - 50
   });
   $("#" + (i)).css('font-family', font)
   if(++i < l){
-    setTimeout(iterator, 120); //SPEED in milliseconds
+    setTimeout(iterator, 100); //SPEED in milliseconds
   } else{
 
   }
