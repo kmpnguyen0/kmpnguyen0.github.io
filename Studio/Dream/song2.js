@@ -1,5 +1,26 @@
+// var song1 = '                 (Intrument playing)         Sing along in 5 - 4 - 3 - 2 - 1 and Go         When you wish upon a star         Makes no difference who you are       Anything your heart desires will come to you                         If your heart is in your dream     No request is too extreme        When you wish upon a star            A s  t h e  d r e a m e r s  d o o o o o      F a t e  i s   k i n d       She brings to those who   l o v e    The sweet fulfillment of joy     t h e i r  s e c r e t  l o n g i n gggggggggg)       uuuuuuuuuuuuuuuuuuuu           Like a bolt out of the  b l u e e e      Fate steps in and sees you  t h r o u g h          When  you  wish     upon  a  star      Your   d r e a m s s s s s      c o m e e e e e e    t r u e e e e e e                             '
+
 var song1 = '                 (Intrument playing)         Sing along in 5 - 4 - 3 - 2 - 1 and Go         When you wish upon a star         Makes no difference who you are       Anything your heart desires will come to you                         If your heart is in your dream     No request is too extreme        When you wish upon a star            A s  t h e  d r e a m e r s  d o o o o o      F a t e  i s   k i n d       She brings to those who   l o v e    The sweet fulfillment of joy     t h e i r  s e c r e t  l o n g i n gggggggggg)       uuuuuuuuuuuuuuuuuuuu           Like a bolt out of the  b l u e e e      Fate steps in and sees you  t h r o u g h          When  you  wish     upon  a  star      Your   d r e a m s s s s s      c o m e e e e e e    t r u e e e e e e                             '
 
+// DYLAN PLEASE CHECK OUT THIS PART!!!!!
+document.addEventListener("keydown", function(event) {
+    var find = '';
+    console.log(event.keyCode);
+    // key code 83 is s
+    if(event.keyCode==69){
+      find = 'e';
+      var re = new RegExp(find, 'g');
+      song1 = song1.replace(re, '111');
+
+
+      // 0x1F418 is the unicode for elephant emoji
+      // https://www.compart.com/en/unicode/U+1F418
+      // have some trouble converting string to unicode emoji
+      // seems like the jquery text() function is doing some decoding
+      // copy and paste emoji directly to the html works 
+      // song1 = song1.replace(re, '🔓');
+    }
+});
 
 //   audio
 function music() {
@@ -8,7 +29,7 @@ function music() {
 }
 
 
-var fonts =["Bourbon","Aleo Light Italic","Broadcast Matter","Aleo Light Italic","Broadcast Matter","Chamfort Family Bold","Eunomia Bold","Eunomia Light","Eunomia","F5.6","Fairview","Ferrum","Kelson Sans Bold","Kelson Sans Light","Kitchen Sink","Oi You","Penna","Rosario Nocera Light","Rosario Nocera","Rosario Nocera Bold","Bitter","FivoSans Bold","FivoSans Medium","Fivo Sans Thin"];
+// var fonts =["Bourbon","Aleo Light Italic","Broadcast Matter","Aleo Light Italic","Broadcast Matter","Chamfort Family Bold","Eunomia Bold","Eunomia Light","Eunomia","F5.6","Fairview","Ferrum","Kelson Sans Bold","Kelson Sans Light","Kitchen Sink","Oi You","Penna","Rosario Nocera Light","Rosario Nocera","Rosario Nocera Bold","Bitter","FivoSans Bold","FivoSans Medium","Fivo Sans Thin"];
 // for (var i = song1.length - 1; i >= 0; i--) {
 //   song1[i]
 //   /*creating a .letter element for each letter*/
@@ -18,10 +39,11 @@ var fonts =["Bourbon","Aleo Light Italic","Broadcast Matter","Aleo Light Italic"
 //   // console.log(song1[])
 // }
 
-var font = "Bourbon"
+var font = "Rosario-Nocera-Light"
 
 
 $(window).on('click', function(){
+
 
 /* change fonts */
 var randomIndex = Math.floor((Math.random() * fonts.length - 1) + 0);
@@ -43,7 +65,7 @@ var Y = 0
 var i = 0, l = song1.length;
 
 (function iterator(){
-
+console.log(i);
 /* do stuff here*/
   var letter = $('<h1></h1>');
   if (song1[i] == " ") {
@@ -62,16 +84,18 @@ var i = 0, l = song1.length;
   if(i > 10){
     $('html, body').animate({scrollLeft: $("#" + (i - 1)).position().left - 300}, 100)
   }
-  
-  $('.letters').css('width', $(window).width() + (200 * i))
 
-  if (i % 20 == 0) {
-    var line = $('<div></div>');
-    $(line).addClass('bar');
-    $('.letters').append(line) 
-    $(line).css('top',0)
-    $(line).css('margin-left', $(window).width())
+  if (i <= (song1.length - 495)) {
+    $('.letters').css('width', $(window).width() + (200 * i))
   }
+
+  // if (i % 20 == 0) {
+  //   var line = $('<div></div>');
+  //   $(line).addClass('bar');
+  //   $('.letters').append(line) 
+  //   $(line).css('top',0)
+  //   $(line).css('margin-left', $(window).width())
+  // }
 /* if the mouse moves, show letter where mouse is*/
   var moved = false;
   $(document).mousemove(function(event) {
@@ -83,7 +107,7 @@ var i = 0, l = song1.length;
         //   moved = true;
         // }
 
-        Y = map(event.pageY, 0, $(window).height(), 100, 480 )
+        Y = map(event.pageY, 0, $(window).height(), 40, 400 )
         //Y = event.pageY - 50
   });
   $("#" + (i)).css('font-family', font)
@@ -112,7 +136,11 @@ var i = 0, l = song1.length;
 // });
 
 
-
+// myAudio.addEventListener("ended", function(){
+//     var end = document.getElementById("myAudio").ended;
+//     window.print();
+//     }
+// );
 
 
 
