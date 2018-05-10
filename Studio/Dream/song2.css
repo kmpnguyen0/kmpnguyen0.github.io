@@ -64,7 +64,7 @@
 }*/
 @font-face {
   font-family: "Rosario-Nocera-Light";
-  src: url("/font/Rosario-Nocera-Light.otf") format("otf")
+  src: url("/font/Rosario-Nocera-Light.woff") format("woff")
 }/*
 @font-face {
   font-family: "Rosario Nocera";
@@ -151,10 +151,22 @@ body{
 
 }
 
-
-
-
-
+#nextsong {
+  display: none;
+  position: fixed;
+  bottom:5vh;
+  font-family: "Rosario-Nocera-Light";
+  font-size:90px;
+  color:black;
+  padding-left:10px;
+  right: 10vw;
+}
+a.link {
+  text-decoration:none;
+}
+a.link:visited {
+  color: black;
+}
 
 
 

@@ -2,24 +2,28 @@
 
 var song1 = '                 (Intrument playing)         Sing along in 5 - 4 - 3 - 2 - 1 and Go         When you wish upon a star         Makes no difference who you are       Anything your heart desires will come to you                         If your heart is in your dream     No request is too extreme        When you wish upon a star            A s  t h e  d r e a m e r s  d o o o o o      F a t e  i s   k i n d       She brings to those who   l o v e    The sweet fulfillment of joy     t h e i r  s e c r e t  l o n g i n gggggggggg)       uuuuuuuuuuuuuuuuuuuu           Like a bolt out of the  b l u e e e      Fate steps in and sees you  t h r o u g h          When  you  wish     upon  a  star      Your   d r e a m s s s s s      c o m e e e e e e    t r u e e e e e e                             '
 
+var letterReplace = {};
+
 // DYLAN PLEASE CHECK OUT THIS PART!!!!!
 document.addEventListener("keydown", function(event) {
     var find = '';
     console.log(event.keyCode);
-    // key code 83 is s
-    if(event.keyCode==69){
-      find = 'e';
-      var re = new RegExp(find, 'g');
-      song1 = song1.replace(re, '111');
-
-
-      // 0x1F418 is the unicode for elephant emoji
-      // https://www.compart.com/en/unicode/U+1F418
-      // have some trouble converting string to unicode emoji
-      // seems like the jquery text() function is doing some decoding
-      // copy and paste emoji directly to the html works 
-      // song1 = song1.replace(re, '🔓');
-    }
+    if ( event.keyCode == 69 ) {
+      // key code 69 is e
+      letterReplace['e'] = '🍆';
+    } else if ( event.keyCode == 65 ) {
+      // key code 65 is a 
+      letterReplace['a'] = '🍎';
+    }else if ( event.keyCode == 85 ) {
+      // key code 85 is u 
+      letterReplace['u'] = '🦄';
+    }else if ( event.keyCode == 79 ) {
+      // key code 79 is o 
+      letterReplace['o'] = '😲';
+    } else if ( event.keyCode == 73 ) {
+      // key code 73 is  
+      letterReplace['i'] = '🍨';
+    } 
 });
 
 //   audio
@@ -71,11 +75,11 @@ console.log(i);
   if (song1[i] == " ") {
     $(letter).html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
   }else{
-    $(letter).text(song1[i]);
+    $(letter).text( letterReplace[song1[i]] || song1[i] );
   }
   
   $(letter).css('top', Y)
-  $(letter).addClass('letter')
+  $(letter).addClass('letter letter-' + song1[i].toLowerCase());
 
   $(letter).attr('id', i)
   $('.letters').append(letter)
@@ -85,7 +89,7 @@ console.log(i);
     $('html, body').animate({scrollLeft: $("#" + (i - 1)).position().left - 300}, 100)
   }
 
-  if (i <= (song1.length - 495)) {
+  if (i <= (song1.length - 480)) {
     $('.letters').css('width', $(window).width() + (200 * i))
   }
 
@@ -135,12 +139,24 @@ console.log(i);
 //     }
 // });
 
+var myAudio = document.getElementById('myAudio');
+myAudio.addEventListener("ended", function () {
+    var nextsong = document.getElementById('nextsong');
+    nextsong.style.display = 'block';
+});
 
-// myAudio.addEventListener("ended", function(){
-//     var end = document.getElementById("myAudio").ended;
-//     window.print();
-//     }
-// );
+/* 
+to print the body
+
+try to window.print(document.body); 
+
+look up both of those things
+*/
+
+
+
+
+
 
 
 

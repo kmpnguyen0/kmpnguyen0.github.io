@@ -4,7 +4,7 @@ function music() {
     document.getElementById("demo").innerHTML = audio;
 }
 
-var song1 = '            Sing along in 5  -  4  -  3  -  2  -  1 and Go  Salagadoola mechicka boola. Bibbidi-bobbidi-boo! Put them together and what have you got. Bibbidi-bobbidi-boo!  Salagadoola mechicka boola Bibbidi-bobbidi-boo! It\'ll do magic, believe it or not Bibbidi-bobbidi-boo!   Now,salagadoola means "Mechicka booleroo" But the thing mabob that does the job Is bibbidi-bobbidi-boo! Salagadoola menchicka boola Bibbidi-bobbidi-boo Put them together what have you got Bibbidi-bobbidi,Bibbidi-bobbidi Bibbidi-bobbidi boo!'
+var song1 = '  (Really?    I guess you don\'t have much experience with heat)    Sing along in 5 - 4 - 3 - 2 - 1 and Go    Bees\'ll buzz, kids\'ll blow dandelion fuzz   And I\'ll be doing whatever snow does   In summer   A drink in my hand, my snow up against the burning sand   Prob\'ly getting gorgeously tanned   In summer   I\'ll finally see a summer breeze blow away a winter storm   And find out what happens to solid water when it gets warm   And I can\'t wait to see what my buddies all think of me   Just imagine how much cooler I\'ll be   In summer          Da da, da doo, ah, bah, bah, bah, bah, bah, boo   The hot and the cold are both so intense   Put \'em together, it just makes sense   Ratdadat, dadadadoo   Winter\'s a good time to stay in and cuddle   But put me in summer and I\'ll be a happy snowman   When life gets rough I like to hold onto my dreams   Of relaxing in the summer sun, just letting off steam   Oh, the sky will be blue, and you guys\'ll be there too   When I finally do what frozen things do   In summer   In summer!'
 
 
 var fonts =["Bourbon","Aleo Light Italic","Broadcast Matter","Aleo Light Italic","Broadcast Matter","Chamfort Family Bold","Eunomia Bold","Eunomia Light","Eunomia","F5.6","Fairview","Ferrum","Kelson Sans Bold","Kelson Sans Light","Kitchen Sink","Oi You","Penna","Rosario Nocera Light","Rosario Nocera","Rosario Nocera Bold","Bitter","FivoSans Bold","FivoSans Medium","Fivo Sans Thin"];
@@ -50,18 +50,19 @@ var i = 0, l = song1.length;
 
   //window.scrollBy(30,0)
   if(i > 10){
-    $('html, body').animate({scrollLeft: $("#" + (i - 1)).position().left + 200}, 90)
+    $('html, body').animate({scrollLeft: $("#" + (i - 1)).position().left + 200}, 100)
   }
   
-  $('.letters').css('width', $(window).width() + (200 * i))
+    $('.letters').css('width', $(window).width() + (200 * i))
 
-  if (i % 16 == 0 && (i != 0)) {
-    var line = $('<div></div>');
-    $(line).addClass('bar');
-    $('.letters').append(line) 
-    $(line).css('top',0)
-    $(line).css('margin-left', $(window).width())
-  }
+
+  // if (i % 16 == 0 && (i != 0)) {
+  //   var line = $('<div></div>');
+  //   $(line).addClass('bar');
+  //   $('.letters').append(line) 
+  //   $(line).css('top',0)
+  //   $(line).css('margin-left', $(window).width())
+  // }
 /* if the mouse moves, show letter where mouse is*/
   var moved = false;
   $(document).mousemove(function(event) {
@@ -69,7 +70,7 @@ var i = 0, l = song1.length;
   });
   $("#" + (i)).css('font-family', font)
   if(++i < l){
-    setTimeout(iterator, 85); //SPEED in milliseconds
+    setTimeout(iterator, 80); //SPEED in milliseconds
   } else{
 
   }
@@ -93,7 +94,8 @@ var i = 0, l = song1.length;
 // });
 
 
-$(song1).on('ended', function(){
-    $('.result').show('ended');
+var myAudio = document.getElementById('myAudio');
+myAudio.addEventListener("ended", function () {
+    var nextsong = document.getElementById('nextsong');
+    nextsong.style.display = 'block';
 });
-
