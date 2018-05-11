@@ -62,10 +62,10 @@
   font-family: "Penna";
   src: url("/font/Penn.otf") format("otf")
 }*/
-@font-face {
+/*@font-face {
   font-family: "Rosario-Nocera-Light";
   src: url("/font/Rosario-Nocera-Light.woff") format("woff")
-}/*
+}*//*
 @font-face {
   font-family: "Rosario Nocera";
   src: url("/font/Rosario-Nocera-Regular.otf") format("otf")
@@ -95,59 +95,63 @@
   src: url("/font/BourbonGrotesque-Regular+(1).otf") format("otf")
 }*/
   
+@font-face {
+  font-family: "Ferrum";
+  src: url("/font/ferrum.otf") format("otf")
+}
 
 body{
-	padding:0;
-	margin: 0;
-	width: 100%;
-	height:100%;
-	background: url(background.jpg), no-repeat;
+  padding:0;
+  margin: 0;
+  width: 100%;
+  height:100%;
+  background: url(background.jpg), no-repeat;
   background-size: 1400px 700px;
   cursor: url('cursor.png'), auto;
 }
 
 .note{
-	  top: 12vh;
+    top: 12vh;
     left: 90px;
     position: relative;
 }
 .line{
-	position: absolute;
-	top:8vh;
+  position: absolute;
+  top:8vh;
 }
 .letter{
-	font-family: "Rosario-Nocera-Light";
-	position:relative;
-	display: inline-block;
-	font-size:90px;
+  font-family: "Ferrum";
+  position:relative;
+  display: inline-block;
+  font-size:110px;
     padding-left:10px;
-/*	transition:0.2s;*/
-/*	height:100vh;*/
+/*  transition:0.2s;*/
+/*  height:100vh;*/
 }
 .letters{
-	position: absolute;
-	left:0;
-	top:0;
-	width:100vw;
-	height:100vh;
-	z-index: 5;
-	left: 5vw;
-	white-space: nowrap;
+  position: absolute;
+  left:0;
+  top:0;
+  width:100vw;
+  height:100vh;
+  z-index: 5;
+  left: 5vw;
+  white-space: nowrap;
 }
 .bar{
-	height:100vh;
-	top:0;
-	background-color: black;
-	width:2px;
-	display: inline-block;
-	position: absolute;
-/*	right:0;*/
+  height:100vh;
+  top:0;
+  background-color: black;
+  width:2px;
+  display: inline-block;
+  position: absolute;
+/*  right:0;*/
 }
 
 .result{
-	background: url(resultbackground.jpg);
-	z-index: 7;
-	width: 100%;
+  background: url(resultbackground.jpg);
+  z-index: 7;
+  width: 100%;
 
 }
 
@@ -155,14 +159,17 @@ body{
   display: none;
   position: fixed;
   bottom:5vh;
-  font-family: "Rosario-Nocera-Light";
+  font-family: "Ferrum";
   font-size:90px;
   color:black;
   padding-left:10px;
-  right: 10vw;
+  right: 5vw;
 }
 a.link {
   text-decoration:none;
+}
+a.link:hover {
+  height:14vh;
 }
 a.link:visited {
   color: black;

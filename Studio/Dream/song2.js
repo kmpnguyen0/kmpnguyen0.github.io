@@ -1,6 +1,6 @@
 // var song1 = '                 (Intrument playing)         Sing along in 5 - 4 - 3 - 2 - 1 and Go         When you wish upon a star         Makes no difference who you are       Anything your heart desires will come to you                         If your heart is in your dream     No request is too extreme        When you wish upon a star            A s  t h e  d r e a m e r s  d o o o o o      F a t e  i s   k i n d       She brings to those who   l o v e    The sweet fulfillment of joy     t h e i r  s e c r e t  l o n g i n gggggggggg)       uuuuuuuuuuuuuuuuuuuu           Like a bolt out of the  b l u e e e      Fate steps in and sees you  t h r o u g h          When  you  wish     upon  a  star      Your   d r e a m s s s s s      c o m e e e e e e    t r u e e e e e e                             '
 
-var song1 = '                 (Intrument playing)         Sing along in 5 - 4 - 3 - 2 - 1 and Go         When you wish upon a star         Makes no difference who you are       Anything your heart desires will come to you                         If your heart is in your dream     No request is too extreme        When you wish upon a star            A s  t h e  d r e a m e r s  d o o o o o      F a t e  i s   k i n d       She brings to those who   l o v e    The sweet fulfillment of joy     t h e i r  s e c r e t  l o n g i n gggggggggg)       uuuuuuuuuuuuuuuuuuuu           Like a bolt out of the  b l u e e e      Fate steps in and sees you  t h r o u g h          When  you  wish     upon  a  star      Your   d r e a m s s s s s      c o m e e e e e e    t r u e e e e e e                             '
+var song1 = '                 (Intrument playing)         Sing along in 5 - 4 - 3 - 2 - 1 and Go         When you wish upon a star         Makes no difference who you are       Anything your heart desires will come to you                         If your heart is in your dream     No request is too extreme        When you wish upon a star            A s  t h e  d r e a m e r s  d o o o o o      F a t e  i s   k i n d       She brings to those who   l o v e    The sweet fulfillment of joy     t h e i r  s e c r e t  l o n g i n gggggggggg)       uuuuuuuuuuuuuuuuuuuu           Like a bolt out of the  b l u e e e      Fate steps in and sees you  t h r o u g h          When  you  wish     upon  a  star      Your   d r e a m s s s s s      c o m e e e e e e    t r u e e e e e e       '
 
 var letterReplace = {};
 
@@ -10,19 +10,19 @@ document.addEventListener("keydown", function(event) {
     console.log(event.keyCode);
     if ( event.keyCode == 69 ) {
       // key code 69 is e
-      letterReplace['e'] = '🍆';
+      letterReplace['e'] = '🦗';
     } else if ( event.keyCode == 65 ) {
       // key code 65 is a 
-      letterReplace['a'] = '🍎';
+      letterReplace['a'] = '🎩';
     }else if ( event.keyCode == 85 ) {
       // key code 85 is u 
-      letterReplace['u'] = '🦄';
+      letterReplace['u'] = '✨';
     }else if ( event.keyCode == 79 ) {
       // key code 79 is o 
-      letterReplace['o'] = '😲';
+      letterReplace['o'] = '🤥';
     } else if ( event.keyCode == 73 ) {
       // key code 73 is  
-      letterReplace['i'] = '🍨';
+      letterReplace['i'] = '☂️';
     } 
 });
 
@@ -43,7 +43,7 @@ function music() {
 //   // console.log(song1[])
 // }
 
-var font = "Rosario-Nocera-Light"
+var font = "Ferrum"
 
 
 $(window).on('click', function(){
@@ -89,7 +89,7 @@ console.log(i);
     $('html, body').animate({scrollLeft: $("#" + (i - 1)).position().left - 300}, 100)
   }
 
-  if (i <= (song1.length - 480)) {
+  if (i <= (song1.length - 440)) {
     $('.letters').css('width', $(window).width() + (200 * i))
   }
 
@@ -145,6 +145,13 @@ myAudio.addEventListener("ended", function () {
     nextsong.style.display = 'block';
 });
 
+
+
+
+swal({ 
+  title: "When You Wish Upon A Star",
+  text: "Try to play with the vowel letters. And have fun!",
+  button: "Oke 💖",});
 /* 
 to print the body
 
